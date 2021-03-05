@@ -10,18 +10,25 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.3",
+    "sass-loader": "10.1.1",
     "web-vitals": "^1.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "lint": "npm-run-all -c lint:*",
+    "lint:eslint": "eslint 'src/**/*.{js,jsx,ts,tsx}'",
+    "lint:stylelint": "stylelint src/**/*.scss",
+    "format": "npm run lint:eslint -- --fix && npm run lint:stylelint -- --fix ",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "engines": {
+    "node": ">=15.9.0"
+  },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {
@@ -35,5 +42,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^7.2.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "prettier": "^2.2.1",
+    "stylelint": "13.11.0",
+    "stylelint-config-recommended-scss": "4.2.0",
+    "stylelint-config-standard": "20.0.0",
+    "stylelint-declaration-use-variable": "^1.7.0",
+    "stylelint-scss": "3.19.0"
   }
 }
