@@ -1,0 +1,33 @@
+{
+  "globals": {
+    "JSX": true
+  },
+  "plugins": ["react", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-var": "error",
+    "prettier/prettier": "error",
+    // note you must disable the base rule as it can report incorrect errors
+    "no-use-before-define": "off",
+     "linebreak-style": [
+      "error",
+      "unix"
+     ],
+     "quotes": [
+     	"error",
+     	"double"
+     ],
+     "semi": [
+     	"error",
+     	"always"
+     ]
+  },
+  "extends": [
+    "react-app",
+    "eslint:recommended",
+    "prettier"
+  ]
+}
