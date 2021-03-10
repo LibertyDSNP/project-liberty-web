@@ -6,17 +6,13 @@
 .Header__logo {
   padding-top: 28px;
   width: 275px;
-}
-@media (max-width: 991px) {
-  .Header__logo {
+
+  @media (max-width: 991px) {
     width: 230px;
   }
-}
-@media (max-width: 767px) {
-  .Header__logo {
+
+  @media (max-width: 767px) {
     padding-top: 18px;
     width: 200px;
   }
 }
-
-/*# sourceMappingURL=App.css.map */
