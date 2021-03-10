@@ -9,13 +9,13 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import DeveloperPortal from "./components/DeveloperPortal";
 import LetsConnect from "./components/LetsConnect";
-import Whitepaper from "./components/Whitepaper";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 
 const App = () => {
   return (
     <>
-      <Header />
       <Router>
+        <Header />
         <Switch>
           <Route exact path="/">
             <Navigation />
@@ -33,13 +33,13 @@ const App = () => {
             <Navigation />
             <LetsConnect />
           </Route>
-          <Route path="/whitepaper">
+          <Route path="/privacy-policy">
             <Navigation />
-            <Whitepaper />
+            <PrivacyPolicy />
           </Route>
         </Switch>
+        <Footer />
       </Router>
-      <Footer />
     </>
   );
 };
