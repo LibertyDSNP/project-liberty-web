@@ -19,7 +19,9 @@ const Navigation = () => {
         <Link to="/lets-connect">Let's Connect</Link>
       </Menu.Item>
       <Menu.Item key="Whitepaper">
-        <Link to="/whitepaper">Whitepaper</Link>
+        <a href="https://github.com/LibertyDSNP/papers" target="_blank">
+          Whitepaper
+        </a>
       </Menu.Item>
     </Menu>
   );
