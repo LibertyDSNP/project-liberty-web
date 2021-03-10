@@ -4,8 +4,8 @@ import logo from "../images/logo.png";
 
 const Header = () => {
   return (
-    <Link to="/">
-      <img src={logo} alt="brand-logo" width={200} />
+    <Link to="/" className="Header__logoBlock">
+      <img className="Header__logo" src={logo} alt="header-logo" />
     </Link>
   );
 };
