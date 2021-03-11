@@ -19,7 +19,11 @@ const Navigation = () => {
         <Link to="/lets-connect">Let's Connect</Link>
       </Menu.Item>
       <Menu.Item key="Whitepaper">
-        <a href="https://github.com/LibertyDSNP/papers" target="_blank">
+        <a
+          href="https://github.com/LibertyDSNP/papers"
+          target="_blank"
+          rel="noreferrer"
+        >
           Whitepaper
         </a>
       </Menu.Item>

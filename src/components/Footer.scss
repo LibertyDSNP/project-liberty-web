@@ -1,0 +1,21 @@
+.Footer__block {
+  background-color: $black;
+  padding: 28px 0;
+  text-align: center;
+  color: $white;
+  font-weight: bold;
+  line-height: 25px;
+}
+
+.Footer__textLink {
+  color: $white;
+
+  &:hover {
+    color: $green;
+  }
+}
+
+.Footer__textSeparator {
+  font-size: 22px;
+  margin: 0 5px;
+}
