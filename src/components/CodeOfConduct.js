@@ -3,8 +3,8 @@ import React from "react";
 const CodeOfConduct = () => {
   return (
     <div className="CodeOfConduct__block">
-      <h1 className="body__h1">Contributor Covenant Code of Conduct</h1>
-      <h2 className="body__h2">Our Pledge</h2>
+      <h1>Contributor Covenant Code of Conduct</h1>
+      <h2>Our Pledge</h2>
       <p>
         We as members, contributors, and leaders pledge to make participation in
         our community a harassment-free experience for everyone, regardless of
@@ -17,7 +17,7 @@ const CodeOfConduct = () => {
         We pledge to act and interact in ways that contribute to an open,
         welcoming, diverse, inclusive, and healthy community.
       </p>
-      <h2 className="body__h2">Our Standards</h2>
+      <h2>Our Standards</h2>
       <p>
         Examples of behavior that contributes to a positive environment for our
         community include:
@@ -57,7 +57,7 @@ const CodeOfConduct = () => {
           professional setting
         </li>
       </ul>
-      <h2 className="body__h2">Enforcement Responsibilities</h2>
+      <h2>Enforcement Responsibilities</h2>
       <p>
         Community leaders are responsible for clarifying and enforcing our
         standards of acceptable behavior and will take appropriate and fair
@@ -70,7 +70,7 @@ const CodeOfConduct = () => {
         contributions that are not aligned to this Code of Conduct, and will
         communicate reasons for moderation decisions when appropriate.
       </p>
-      <h2 className="body__h2">Scope</h2>
+      <h2>Scope</h2>
       <p>
         This Code of Conduct applies within all community spaces, and also
         applies when an individual is officially representing the community in
@@ -78,7 +78,7 @@ const CodeOfConduct = () => {
         official e-mail address, posting via an official social media account,
         or acting as an appointed representative at an online or offline event.
       </p>
-      <h2 className="body__h2">Enforcement</h2>
+      <h2>Enforcement</h2>
       <p>
         Instances of abusive, harassing, or otherwise unacceptable behavior may
         be reported to the community leaders responsible for enforcement at
@@ -89,13 +89,13 @@ const CodeOfConduct = () => {
         All community leaders are obligated to respect the privacy and security
         of the reporter of any incident.
       </p>
-      <h2 className="body__h2">Enforcement Guidelines</h2>
+      <h2>Enforcement Guidelines</h2>
       <p>
         Community leaders will follow these Community Impact Guidelines in
         determining the consequences for any action they deem in violation of
         this Code of Conduct:
       </p>
-      <h3 className="body__subHeading">1. Correction</h3>
+      <h3>1. Correction</h3>
       <p>
         <b>Community Impact:</b> Use of inappropriate language or other behavior
         deemed unprofessional or unwelcome in the community.
@@ -106,7 +106,7 @@ const CodeOfConduct = () => {
         of why the behavior was inappropriate. A public apology may be
         requested.
       </p>
-      <h3 className="body__subHeading">2. Warning</h3>
+      <h3>2. Warning</h3>
       <p>
         <b>Community Impact:</b> A violation through a single incident or series
         of actions.
@@ -119,7 +119,7 @@ const CodeOfConduct = () => {
         as well as external channels like social media. Violating these terms
         may lead to a temporary or permanent ban.
       </p>
-      <h3 className="body__subHeading">3. Temporary Ban</h3>
+      <h3>3. Temporary Ban</h3>
       <p>
         <b>Community Impact:</b> A serious violation of community standards,
         including sustained inappropriate behavior.
@@ -132,7 +132,7 @@ const CodeOfConduct = () => {
         allowed during this period. Violating these terms may lead to a
         permanent ban.
       </p>
-      <h3 className="body__subHeading">4. Permanent Ban</h3>
+      <h3>4. Permanent Ban</h3>
       <p>
         <b>Community Impact:</b> Demonstrating a pattern of violation of
         community standards, including sustained inappropriate behavior,
@@ -143,7 +143,7 @@ const CodeOfConduct = () => {
         <b>Consequence:</b> A permanent ban from any sort of public interaction
         within the community.
       </p>
-      <h2 className="body__h2">Attribution</h2>
+      <h2>Attribution</h2>
       <p>
         This Code of Conduct is adapted from the
         <a href="https://www.contributor-covenant.org/" target="_blank">
