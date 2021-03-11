@@ -14,6 +14,10 @@ const Footer = () => {
         Privacy Policy
       </Link>
       <span className="Footer__textSeparator">/</span>
+      <Link className="Footer__textLink" to="/code-of-conduct">
+        Code of Conduct
+      </Link>
+      <span className="Footer__textSeparator">/</span>
       <a
         className="Footer__textLink"
         href="https://www.unfinishedlabs.io"

@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import DeveloperPortal from "./components/DeveloperPortal";
 import LetsConnect from "./components/LetsConnect";
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import CodeOfConduct from "./components/CodeOfConduct";
 
 const App = () => {
   return (
@@ -36,6 +37,10 @@ const App = () => {
           <Route path="/privacy-policy">
             <Navigation />
             <PrivacyPolicy />
+          </Route>
+          <Route path="/code-of-conduct">
+            <Navigation />
+            <CodeOfConduct />
           </Route>
         </Switch>
         <Footer />
