@@ -146,7 +146,11 @@ const CodeOfConduct = () => {
       <h2>Attribution</h2>
       <p>
         This Code of Conduct is adapted from the
-        <a href="https://www.contributor-covenant.org/" target="_blank">
+        <a
+          href="https://www.contributor-covenant.org/"
+          target="_blank"
+          rel="noreferrer"
+        >
           {" "}
           Contributor Covenant
         </a>
@@ -162,7 +166,11 @@ const CodeOfConduct = () => {
       </p>
       <p>
         Community Impact Guidelines were inspired by
-        <a href="https://github.com/mozilla/inclusion" target="_blank">
+        <a
+          href="https://github.com/mozilla/inclusion"
+          target="_blank"
+          rel="noreferrer"
+        >
           Mozilla's code of conduct enforcement ladder
         </a>
         .
@@ -177,6 +185,7 @@ const CodeOfConduct = () => {
         <a
           href="https://www.contributor-covenant.org/translations"
           target="_blank"
+          rel="noreferrer"
         >
           https://www.contributor-covenant.org/translations
         </a>
