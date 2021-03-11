@@ -1,41 +1,44 @@
 import React from "react";
 import BrandIcon from "../images/brand-icon.png";
+import Slider from "react-slick";
 
 const Home = () => {
+  const sliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 400,
+    fade: true,
+    cssEase: "linear",
+    autoplay: true,
+    pauseOnHover: false,
+    prevArrow: false,
+    nextArrow: false,
+  };
+
   return (
     <>
-      <div className="Index__questions">
-        <h1 className="Index__questionsH1">
+      <Slider {...sliderSettings} className="Home__slider">
+        <h2>
           Why should corporations control our social networks and own our
           personal data?
-        </h1>
-        <h1 className="Index__questionsH1">
-          Why isn’t the social network public infrastructure?
-        </h1>
-        <h1 className="Index__questionsH1">
-          What if we could break free from the surveillance economy?
-        </h1>
-        <h1 className="Index__questionsH1">
-          What if social networks didn’t extract value from people, but
+        </h2>
+        <h2>Why isn’t the social network public infrastructure?</h2>
+        <h2>What if we could break free from the surveillance economy?</h2>
+        <h2>
+          What if social networks didn't extract value from people, but
           generated it for them?
-        </h1>
-        <h1 className="Index__questionsH1">
-          Why do our relationships need a gatekeeper?
-        </h1>
-        <h1 className="Index__questionsH1">
-          What if the social graph were as free and open as the Internet?
-        </h1>
+        </h2>
+        <h2>Why do our relationships need a gatekeeper?</h2>
+        <h2>What if the social graph were as free and open as the Internet?</h2>
+      </Slider>
+      <img className="Home__blackBoxIcon" src={BrandIcon} alt="brand icon" />
+      <div className="Home__blackBox">
+        <h2 className="Home__blackBoxText">
+          Reclaiming the social graph for the common good is one of the greatest
+          opportunities of our time.
+        </h2>
       </div>
-      <div>
-        <img className="Index__blackBoxIcon" src={BrandIcon} alt="brand icon" />
-        <div className="Index__blackBox">
-          <h2 className="Index__blackBoxH2">
-            Reclaiming the social graph for the common good is one of the
-            greatest opportunities of our time.
-          </h2>
-        </div>
-      </div>
-      <div className="Index__bodyText">
+      <div className="Home__bodyText">
         <p>
           Embedded at the core of every social network lies a complex digital
           representation of our online relationships known as the social graph.
