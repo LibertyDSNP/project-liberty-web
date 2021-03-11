@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="Footer__block">
-      <span className="Footer__text">©2020 Liberty 3.0 LLC</span>
+      <span>©2020 Liberty 3.0 LLC</span>
       <span className="Footer__textSeparator">/</span>
       <a className="Footer__textLink" href="mailto:hello@projectliberty.io">
         Contact

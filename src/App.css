@@ -22,27 +22,20 @@
 .Footer__block {
   background-color: #000;
   padding: 28px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.Footer__text {
+  text-align: center;
   color: #fff;
   font-weight: bold;
+  line-height: 25px;
 }
 
 .Footer__textLink {
   color: #fff;
-  font-weight: bold;
 }
 .Footer__textLink:hover {
   color: #26e990;
 }
 
 .Footer__textSeparator {
-  color: #fff;
-  font-weight: bold;
   font-size: 22px;
   margin: 0 5px;
 }

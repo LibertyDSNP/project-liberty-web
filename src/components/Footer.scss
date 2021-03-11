@@ -1,19 +1,14 @@
 .Footer__block {
   background-color: $black;
   padding: 28px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.Footer__text {
+  text-align: center;
   color: $white;
   font-weight: bold;
+  line-height: 25px;
 }
 
 .Footer__textLink {
   color: $white;
-  font-weight: bold;
 
   &:hover {
     color: $green;
@@ -21,8 +16,6 @@
 }
 
 .Footer__textSeparator {
-  color: $white;
-  font-weight: bold;
   font-size: 22px;
   margin: 0 5px;
 }
