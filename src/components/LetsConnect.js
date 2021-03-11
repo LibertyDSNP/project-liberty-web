@@ -12,6 +12,7 @@ const LetsConnect = () => {
           className="Contact__formA"
           href="https://forum.projectliberty.io/"
           target="_blank"
+          rel="noreferrer"
         >
           https://forum.projectliberty.io/
         </a>

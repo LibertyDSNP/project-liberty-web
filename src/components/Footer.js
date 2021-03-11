@@ -3,20 +3,26 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <>
-      <p className="footer__p">
-        ©2020 Liberty 3.0 LLC \
-        <a href="mailto:hello@projectliberty.io">Contact</a> \
-        <Link to="/privacy-policy">Privacy Policy</Link> \
-        <a
-          href="https://www.unfinishedlabs.io"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Unfinished Labs
-        </a>
-      </p>
-    </>
+    <div className="Footer__block">
+      <span className="Footer__text">©2020 Liberty 3.0 LLC</span>
+      <span className="Footer__textSeparator">/</span>
+      <a className="Footer__textLink" href="mailto:hello@projectliberty.io">
+        Contact
+      </a>
+      <span className="Footer__textSeparator">/</span>
+      <Link className="Footer__textLink" to="/privacy-policy">
+        Privacy Policy
+      </Link>
+      <span className="Footer__textSeparator">/</span>
+      <a
+        className="Footer__textLink"
+        href="https://www.unfinishedlabs.io"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Unfinished Labs
+      </a>
+    </div>
   );
 };
 
