@@ -17,14 +17,6 @@
   color: $white;
 }
 
-.LetsConnect__link {
-  color: $green;
-
-  &:hover {
-    color: $green;
-  }
-}
-
 .LetsConnect__form {
   position: relative;
   width: 50%;
@@ -36,6 +28,7 @@
   @media (max-width: 991px) {
     width: 60%;
   }
+
   @media (max-width: 767px) {
     width: 80%;
   }

@@ -158,6 +158,7 @@ const CodeOfConduct = () => {
         <a
           href="https://www.contributor-covenant.org/version/2/0/code_of_conduct/"
           target="_blank"
+          rel="noreferrer"
         >
           {" "}
           https://www.contributor-covenant.org/version/2/0/code_of_conduct.html
@@ -178,7 +179,11 @@ const CodeOfConduct = () => {
       <p>
         For answers to common questions about this code of conduct, see the FAQ
         at
-        <a href="https://www.contributor-covenant.org/faq" target="_blank">
+        <a
+          href="https://www.contributor-covenant.org/faq"
+          target="_blank"
+          rel="noreferrer"
+        >
           https://www.contributor-covenant.org/faq
         </a>
         . Translations are available at

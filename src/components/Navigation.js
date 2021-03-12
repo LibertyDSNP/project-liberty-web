@@ -1,33 +1,30 @@
 import React from "react";
-import { Menu } from "antd";
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
-  const [currentKey, setCurrentKey] = React.useState("/");
   return (
-    <Menu onClick={(e) => setCurrentKey(e.key)} selectedKeys={currentKey}>
-      <Menu.Item key="About">
-        <Link to="/about">About</Link>
-      </Menu.Item>
-      <Menu.Item key="DeveloperPortal">
-        <Link to="/developer-portal">Developer Portal</Link>
-      </Menu.Item>
-      <Menu.Item key="Home">
-        <Link to="/">Home</Link>
-      </Menu.Item>
-      <Menu.Item key="LetsConnect">
-        <Link to="/lets-connect">Let's Connect</Link>
-      </Menu.Item>
-      <Menu.Item key="Whitepaper">
-        <a
-          href="https://github.com/LibertyDSNP/papers"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Whitepaper
-        </a>
-      </Menu.Item>
-    </Menu>
+    <>
+      <Link to="/about" className="Navigation__link">
+        About
+      </Link>
+      <span className="Navigation__divider"> / </span>
+      <Link to="/developer-portal" className="Navigation__link">
+        Developer Portal
+      </Link>
+      <span className="Navigation__divider"> / </span>
+      <Link to="/lets-connect" className="Navigation__link">
+        Let's Connect
+      </Link>
+      <span className="Navigation__divider"> / </span>
+      <a
+        className="Navigation__link"
+        href="https://github.com/LibertyDSNP/papers"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Whitepaper
+      </a>
+    </>
   );
 };
 

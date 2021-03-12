@@ -8,11 +8,11 @@ const About = () => {
       <article class="About__article">
         <img className="About__articleIcon" src={BrandIcon} alt="brand icon" />
         <h1>Social Networks Have Eroded Trust. Let’s Change the Technology.</h1>
-        <h2 class="About__articleSubHeading">
+        <h3 class="About__articleSubHeading">
           We believe a unified, universally accessible, and decentralized social
           graph is the essential first step in giving the Internet back to
           society. Let’s build it together.
-        </h2>
+        </h3>
         <div class="About__articleAuthors">
           <p class="About__articleAuthorsPerson">
             <b>Frank H. McCourt, Jr.</b>
@@ -90,10 +90,10 @@ const About = () => {
           us.
         </p>
         <hr class="About__articleLine" />
-        <aside class="About__articleInterjection">
+        <h3 class="About__articleInterjection">
           Reclaiming the social graph for the common good is one of the greatest
           opportunities of our time.
-        </aside>
+        </h3>
         <hr class="About__articleLine" />
         <p>
           We now have the opportunity to reclaim the social graph for the

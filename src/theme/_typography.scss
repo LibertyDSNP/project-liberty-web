@@ -1,0 +1,86 @@
+h1 {
+  font-size: $desktop-h1;
+  font-weight: bold;
+  margin-bottom: 32px;
+
+  @media (min-width: 992px) and (max-width: 1280px) {
+    font-size: $laptop-h1;
+  }
+
+  @media (max-width: 991px) {
+    font-size: $mobile-h1;
+  }
+}
+
+h2 {
+  font-size: $desktop-h2;
+  font-weight: bold;
+  margin: 20px 0;
+
+  @media (min-width: 992px) and (max-width: 1280px) {
+    font-size: $laptop-h2;
+  }
+
+  @media (max-width: 991px) {
+    font-size: $mobile-h2;
+  }
+}
+
+h3 {
+  font-size: $desktop-h3;
+  font-weight: bold;
+  line-height: 40px;
+  margin-bottom: 16px;
+
+  @media (min-width: 1001px) and (max-width: 1280px) {
+    font-size: $laptop-h3;
+    line-height: 36px;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: $mobile-h3;
+    line-height: 30px;
+  }
+}
+
+p {
+  font-size: $desktop-paragraph;
+  line-height: 36px;
+  margin-bottom: 20px;
+
+  @media (min-width: 992px) and (max-width: 1280px) {
+    font-size: $laptop-paragraph;
+    line-height: 33px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: $mobile-paragraph;
+    line-height: 30px;
+  }
+}
+
+li {
+  font-size: $desktop-paragraph;
+  line-height: 36px;
+
+  @media (min-width: 992px) and (max-width: 1280px) {
+    font-size: $laptop-paragraph;
+    line-height: 33px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: $mobile-paragraph;
+    line-height: 30px;
+  }
+}
+
+a {
+  color: $green;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: $green;
+  text-decoration: underline;
+}
