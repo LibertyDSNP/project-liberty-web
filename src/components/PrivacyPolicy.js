@@ -4,7 +4,7 @@ const PrivacyPolicy = () => {
   return (
     <div className="Privacy__mainBlock">
       <div>
-        <h1 className="body__subHeading">Last Updated December 29, 2020</h1>
+        <h1>Last Updated December 29, 2020</h1>
         <p>
           This privacy policy (“Privacy Policy”) applies to personal information
           collected through www.projectliberty.io, and other products and
@@ -80,9 +80,7 @@ const PrivacyPolicy = () => {
           </p>
         </div>
         <div>
-          <h1 className="body__h1">
-            Use and disclosure of personal information
-          </h1>
+          <h1>Use and disclosure of personal information</h1>
           <p>
             First and most importantly, we do not sell or rent personal
             information obtained through this Site, and we do not use personal
@@ -197,9 +195,7 @@ const PrivacyPolicy = () => {
             purpose for which it is collected, including legitimate business
             reasons, and/or legal and regulatory requirements.
           </p>
-          <h1 className="body__h1">
-            Rights with respect to your personal information
-          </h1>
+          <h1>Rights with respect to your personal information</h1>
           <p>We believe that you, the user, should have the right to:</p>
           <ul>
             <li>
@@ -296,7 +292,7 @@ const PrivacyPolicy = () => {
             country and to the processing of your information in these
             countries.
           </p>
-          <h1 className="body__h1">Links to third-party sites</h1>
+          <h1>Links to third-party sites</h1>
           <p>
             This Site may contain links to third-party sites, including to
             social networking sites. We are not responsible for any personal
