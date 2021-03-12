@@ -145,6 +145,111 @@
   }
 }
 
+.About__backgroundImg {
+  background-image: url("../images/Hero_Road.jpg");
+  height: 500px;
+  width: 100%;
+  margin-top: 28px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .About__backgroundImg {
+    background-attachment: scroll;
+    height: 350px;
+    width: 100%;
+    margin-top: 18px;
+  }
+}
+
+.About__articleIcon {
+  margin: -145px auto 0 auto;
+  width: 72px;
+  height: 72px;
+}
+@media (max-width: 991px) {
+  .About__articleIcon {
+    width: 60px;
+    height: 60px;
+    margin: -115px auto 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .About__articleIcon {
+    width: 50px;
+    height: 50px;
+    margin: -85px auto 0 auto;
+  }
+}
+
+.About__article {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin: -325px auto 0;
+  background-color: #fff;
+  padding: 60px 32px 0 32px;
+}
+@media (max-width: 991px) {
+  .About__article {
+    max-width: 75vw;
+  }
+}
+@media (max-width: 767px) {
+  .About__article {
+    max-width: 90vw;
+  }
+}
+@media (max-width: 991px) {
+  .About__article {
+    margin: -350px auto 0;
+    padding: 45px 22px 0 22px;
+  }
+}
+@media (max-width: 767px) {
+  .About__article {
+    margin: -250px auto 0;
+    padding: 30px 12px 0 12px;
+  }
+}
+.About__article p,
+.About__article h1,
+.About__article h2 {
+  text-align: left;
+}
+
+.About__articleSubHeading {
+  font-style: italic;
+}
+
+.About__articleAuthors {
+  display: flex;
+}
+
+.About__articleAuthorsPerson {
+  margin: 25px 10vw 0 0;
+}
+
+.About__articleLine {
+  border: 1px solid #26e990;
+}
+
+.About__articleInterjection {
+  text-align: center;
+}
+
+.About__articleList {
+  padding-inline-start: 60px;
+}
+@media (max-width: 767px) {
+  .About__articleList {
+    padding-inline-start: 30px;
+  }
+}
+
 .CodeOfConduct__block {
   margin: 0 auto;
   padding-top: 30px;
