@@ -250,6 +250,51 @@
   }
 }
 
+.LetsConnect__block {
+  background-color: #000;
+  padding-bottom: 20px;
+  margin: 20px 0;
+}
+
+.LetsConnect__title {
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.LetsConnect__caption {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+}
+
+.LetsConnect__link {
+  color: #26e990;
+}
+.LetsConnect__link:hover {
+  color: #26e990;
+}
+
+.LetsConnect__form {
+  position: relative;
+  width: 50%;
+  max-width: 700px;
+  background-color: #fff;
+  padding: 16px;
+  margin: 20px auto;
+}
+@media (max-width: 991px) {
+  .LetsConnect__form {
+    width: 60%;
+  }
+}
+@media (max-width: 767px) {
+  .LetsConnect__form {
+    width: 80%;
+  }
+}
+
 .CodeOfConduct__block {
   margin: 0 auto;
   padding-top: 30px;
