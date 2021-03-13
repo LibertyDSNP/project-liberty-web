@@ -1,12 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
+import Navigation from "./Navigation";
 
 const Header = () => {
   return (
-    <Link to="/" className="Header__logoBlock">
-      <img className="Header__logo" src={logo} alt="header-logo" />
-    </Link>
+    <div className="Header__block">
+      <Link to="/" className="Header__logoLink">
+        <img className="Header__logo" src={logo} alt="header-logo" />
+      </Link>
+      <Navigation />
+    </div>
   );
 };
 

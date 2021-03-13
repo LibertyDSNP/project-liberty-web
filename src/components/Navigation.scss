@@ -1,7 +1,14 @@
+.Navigation__block {
+  display: flex;
+  margin-right: 12px;
+}
+
 .Navigation__link {
   color: $black;
 }
 
 .Navigation__divider {
   color: $green;
+  margin: 0 10px;
+  font-weight: bold;
 }

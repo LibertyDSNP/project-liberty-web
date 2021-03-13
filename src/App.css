@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -99,13 +100,14 @@ a:hover {
   text-decoration: underline;
 }
 
-.Header__logoBlock {
+.Header__block {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
 }
 
 .Header__logo {
-  padding-top: 28px;
   width: 275px;
 }
 @media (max-width: 991px) {
@@ -125,8 +127,19 @@ a:hover {
   padding: 28px 0;
   text-align: center;
   color: #fff;
+  font-size: 14px;
   font-weight: bold;
   line-height: 25px;
+}
+@media (max-width: 991px) {
+  .Footer__block {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .Footer__block {
+    font-size: 10px;
+  }
 }
 
 .Footer__textLink {
@@ -137,6 +150,21 @@ a:hover {
   font-size: 22px;
   margin: 0 5px;
 }
+@media (max-width: 991px) {
+  .Footer__textSeparator {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .Footer__textSeparator {
+    font-size: 16px;
+  }
+}
+
+.Navigation__block {
+  display: flex;
+  margin-right: 12px;
+}
 
 .Navigation__link {
   color: #000;
@@ -144,6 +172,8 @@ a:hover {
 
 .Navigation__divider {
   color: #26e990;
+  margin: 0 10px;
+  font-weight: bold;
 }
 
 .Home__slider {
@@ -256,7 +286,6 @@ a:hover {
   background-image: url("../images/Hero_Road.jpg");
   height: 500px;
   width: 100%;
-  margin-top: 28px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -267,59 +296,69 @@ a:hover {
     background-attachment: scroll;
     height: 350px;
     width: 100%;
-    margin-top: 18px;
   }
 }
 
-.About__articleIcon {
-  margin: -145px auto 0 auto;
-  width: 72px;
-  height: 72px;
-}
-@media (max-width: 991px) {
-  .About__articleIcon {
-    width: 60px;
-    height: 60px;
-    margin: -115px auto 0 auto;
-  }
-}
-@media (max-width: 767px) {
-  .About__articleIcon {
-    width: 50px;
-    height: 50px;
-    margin: -85px auto 0 auto;
-  }
-}
-
-.About__article {
+.About__articleBlock {
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
   text-align: center;
   margin: -325px auto 0;
   background-color: #fff;
-  padding: 60px 32px 0 32px;
 }
 @media (max-width: 991px) {
-  .About__article {
+  .About__articleBlock {
     max-width: 75vw;
   }
 }
 @media (max-width: 767px) {
-  .About__article {
+  .About__articleBlock {
     max-width: 90vw;
   }
 }
 @media (max-width: 991px) {
-  .About__article {
+  .About__articleBlock {
     margin: -350px auto 0;
-    padding: 45px 22px 0 22px;
+  }
+}
+@media (max-width: 767px) {
+  .About__articleBlock {
+    margin: -250px auto 0;
+  }
+}
+
+.About__articleIcon {
+  width: 72px;
+  height: 72px;
+  margin-top: -36px;
+}
+@media (max-width: 991px) {
+  .About__articleIcon {
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;
+  }
+}
+@media (max-width: 767px) {
+  .About__articleIcon {
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+  }
+}
+
+.About__article {
+  padding: 0 32px;
+}
+@media (max-width: 991px) {
+  .About__article {
+    padding: 0 22px;
   }
 }
 @media (max-width: 767px) {
   .About__article {
-    margin: -250px auto 0;
-    padding: 30px 12px 0 12px;
+    padding: 0 12px;
   }
 }
 .About__article p,
@@ -357,7 +396,7 @@ a:hover {
 .LetsConnect__block {
   background-color: #000;
   padding-bottom: 20px;
-  margin: 20px 0;
+  margin: -20px 0 20px 0;
 }
 
 .LetsConnect__title {
@@ -393,8 +432,39 @@ a:hover {
 }
 
 .CodeOfConduct__block {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
   margin: 0 auto;
   padding-top: 30px;
+}
+@media (max-width: 991px) {
+  .CodeOfConduct__block {
+    max-width: 75vw;
+  }
+}
+@media (max-width: 767px) {
+  .CodeOfConduct__block {
+    max-width: 90vw;
+  }
+}
+
+.PrivacyPolicy__block {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+@media (max-width: 991px) {
+  .PrivacyPolicy__block {
+    max-width: 75vw;
+  }
+}
+@media (max-width: 767px) {
+  .PrivacyPolicy__block {
+    max-width: 90vw;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

@@ -1,10 +1,11 @@
-.Header__logoBlock {
+.Header__block {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
 }
 
 .Header__logo {
-  padding-top: 28px;
   width: 275px;
 
   @media (max-width: 991px) {

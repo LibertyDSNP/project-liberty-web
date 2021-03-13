@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
-    <>
+    <div className="Navigation__block">
       <Link to="/about" className="Navigation__link">
         About
       </Link>
@@ -24,7 +24,7 @@ const Navigation = () => {
       >
         Whitepaper
       </a>
-    </>
+    </div>
   );
 };
 

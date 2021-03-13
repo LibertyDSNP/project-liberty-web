@@ -172,6 +172,7 @@ const CodeOfConduct = () => {
           target="_blank"
           rel="noreferrer"
         >
+          {" "}
           Mozilla's code of conduct enforcement ladder
         </a>
         .
@@ -184,6 +185,7 @@ const CodeOfConduct = () => {
           target="_blank"
           rel="noreferrer"
         >
+          {" "}
           https://www.contributor-covenant.org/faq
         </a>
         . Translations are available at
@@ -192,6 +194,7 @@ const CodeOfConduct = () => {
           target="_blank"
           rel="noreferrer"
         >
+          {" "}
           https://www.contributor-covenant.org/translations
         </a>
         .
