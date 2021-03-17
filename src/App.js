@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./App.scss";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -11,31 +13,41 @@ import PrivacyPolicy from "./components/PrivacyPolicy";
 import CodeOfConduct from "./components/CodeOfConduct";
 
 const App = () => {
+  const [pathname, setPathname] = React.useState("");
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, [pathname]);
+
   return (
     <>
       <Router>
-        <Header />
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/developer-portal">
-            <DeveloperPortal />
-          </Route>
-          <Route path="/lets-connect">
-            <LetsConnect />
-          </Route>
-          <Route path="/privacy-policy">
-            <PrivacyPolicy />
-          </Route>
-          <Route path="/code-of-conduct">
-            <CodeOfConduct />
-          </Route>
-        </Switch>
-        <Footer />
+        <div className="Content">
+          <Header />
+          <Switch>
+            <Route exact path="/">
+              <Home onPathChange={setPathname} />
+            </Route>
+            <Route path="/about">
+              <About onPathChange={setPathname} />
+            </Route>
+            <Route path="/developer-portal">
+              <DeveloperPortal onPathChange={setPathname} />
+            </Route>
+            <Route path="/lets-connect">
+              <LetsConnect onPathChange={setPathname} />
+            </Route>
+            <Route path="/privacy-policy">
+              <PrivacyPolicy onPathChange={setPathname} />
+            </Route>
+            <Route path="/code-of-conduct">
+              <CodeOfConduct onPathChange={setPathname} />
+            </Route>
+          </Switch>
+          <Footer />
+        </div>
       </Router>
     </>
   );

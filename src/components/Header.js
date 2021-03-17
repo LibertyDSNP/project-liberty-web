@@ -6,7 +6,7 @@ import Navigation from "./Navigation";
 const Header = () => {
   return (
     <div className="Header__block">
-      <Link to="/" className="Header__logoLink">
+      <Link to="/" className="Header__logoLink" data-aos="slide-up">
         <img className="Header__logo" src={logo} alt="header-logo" />
       </Link>
       <Navigation />

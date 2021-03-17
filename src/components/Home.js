@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import BrandIcon from "../images/brand-icon.png";
 import Slider from "react-slick";
 
-const Home = () => {
+const Home = (props) => {
+  useEffect(() => {
+    props.onPathChange("home");
+  }, [props]);
+
   const sliderSettings = {
     dots: false,
     infinite: true,
@@ -16,7 +20,7 @@ const Home = () => {
   };
 
   return (
-    <>
+    <div className="Component">
       <Slider {...sliderSettings} className="Home__slider">
         <h2>
           Why should corporations control our social networks and own our
@@ -71,7 +75,7 @@ const Home = () => {
           in taking back this essential part of the Internet for all.
         </p>
       </div>
-    </>
+    </div>
   );
 };
 

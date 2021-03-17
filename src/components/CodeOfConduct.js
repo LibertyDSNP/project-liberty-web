@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-const CodeOfConduct = () => {
+const CodeOfConduct = (props) => {
+  useEffect(() => {
+    props.onPathChange("code-of-conduct");
+  }, [props]);
+
   return (
-    <div className="CodeOfConduct__block">
+    <div className="CodeOfConduct__block Component">
       <h1>Contributor Covenant Code of Conduct</h1>
       <h2>Our Pledge</h2>
       <p>

@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import BrandIcon from "../images/brand-icon.png";
 
-const About = () => {
+const About = (props) => {
+  useEffect(() => {
+    props.onPathChange("about");
+  }, [props]);
+
   return (
-    <>
+    <div className="Component">
       <div className="About__backgroundImg"></div>
       <div className="About__articleBlock">
         <img className="About__articleIcon" src={BrandIcon} alt="brand icon" />
@@ -251,7 +255,7 @@ const About = () => {
           </p>
         </article>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -1,6 +1,7 @@
 .Footer__block {
   background-color: $black;
   padding: 28px 0;
+  margin-top: 100px;
   text-align: center;
   color: $white;
   font-size: 14px;
@@ -9,10 +10,12 @@
 
   @media (max-width: 991px) {
     font-size: 12px;
+    margin-top: 75px;
   }
 
   @media (max-width: 767px) {
     font-size: 10px;
+    margin-top: 50px;
   }
 }
 
