@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-const DeveloperPortal = () => {
+const DeveloperPortal = (props) => {
+  useEffect(() => {
+    props.onPathChange("developer-portal");
+  }, [props]);
+
   return (
-    <>
+    <div className="Component">
       <h1>DeveloperPortal</h1>
-    </>
+    </div>
   );
 };
 

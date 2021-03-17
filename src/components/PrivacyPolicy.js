@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-const PrivacyPolicy = () => {
+const PrivacyPolicy = (props) => {
+  useEffect(() => {
+    props.onPathChange("privacy-policy");
+  }, [props]);
+
   return (
-    <div className="PrivacyPolicy__block">
+    <div className="PrivacyPolicy__block Component">
       <h1>Last Updated December 29, 2020</h1>
       <p>
         This privacy policy (“Privacy Policy”) applies to personal information

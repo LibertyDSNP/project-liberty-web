@@ -1,4 +1,22 @@
 body {
   margin: 0;
+  height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.Content {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.Component {
+  flex-grow: 1;
+}
+
+.Header__block,
+.Component,
+.Footer__block {
+  flex-shrink: 0;
 }

@@ -1,0 +1,10 @@
+[data-aos="slide-up"] {
+  transform: translate(0, 15px);
+  opacity: 0;
+  transition-property: transform;
+
+  &.aos-animate {
+    transform: translate(0, -15px);
+    opacity: 1;
+  }
+}
