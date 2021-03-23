@@ -50,13 +50,18 @@ const Navigation = () => {
             About
           </Link>
           <span className="Navigation__divider"> / </span>
-          <Link
-            to="/developer-portal"
-            className="Navigation__link"
-            onClick={() => hideDropdownNav()}
-          >
-            Developer Portal
-          </Link>
+          <div className="Navigation__dropdownBlock">
+            <Link
+              to="/developer-portal"
+              className="Navigation__link Navigation__dropdownBtn"
+              onClick={() => hideDropdownNav()}
+            >
+              Developer Portal
+            </Link>
+            <div className="Navigation__dropdown">
+              <Link to="page-1">Link1</Link>
+            </div>
+          </div>
           <span className="Navigation__divider"> / </span>
           <Link
             to="/lets-connect"

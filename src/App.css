@@ -274,7 +274,7 @@ a:hover {
 
 .Navigation__divider {
   color: #26e990;
-  margin: 0 10px;
+  margin: 0 12px;
   font-weight: bold;
   display: block;
 }
@@ -338,6 +338,43 @@ a:hover {
     -webkit-transform: rotate(45deg) translate(-8px, -6px);
     transform: rotate(45deg) translate(-8px, -6px);
   }
+}
+
+.Navigation__dropdownBlock {
+  position: relative;
+}
+
+.Navigation__dropdown {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  transform: translateY(-1em);
+  transition: all 0.5s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.Navigation__dropdown a {
+  padding: 10px 5px;
+  color: #000;
+}
+
+.Navigation__dropdown a:hover {
+  background-color: #d4d4d4;
+  text-decoration: none;
+}
+
+.Navigation__dropdownBlock:focus .Navigation__dropdown,
+.Navigation__dropdownBlock:focus-within .Navigation__dropdown,
+.Navigation__dropdownBlock:hover .Navigation__dropdown {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.5s;
 }
 
 .Home__slider {
@@ -555,6 +592,221 @@ a:hover {
   .About__articleList {
     padding-inline-start: 30px;
   }
+}
+
+.DeveloperPortal__block {
+  background-color: #000;
+  color: #fff;
+}
+
+.DeveloperPortal__header {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+@media (max-width: 991px) {
+  .DeveloperPortal__header {
+    max-width: 75vw;
+  }
+}
+@media (max-width: 767px) {
+  .DeveloperPortal__header {
+    max-width: 90vw;
+  }
+}
+
+.DeveloperPortal__headerText {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.DeveloperPortal__headerText > * {
+  flex: 28;
+  padding: 0 25px;
+}
+
+.DeveloperPortal__headerTitle {
+  border-right: 3px solid #26e990;
+  padding-left: 0;
+}
+
+.DeveloperPortal__headerCaption {
+  border-right: 3px solid #26e990;
+}
+
+.DeveloperPortal__getStarted {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 991px) {
+  .DeveloperPortal__getStarted {
+    max-width: 75vw;
+  }
+}
+@media (max-width: 767px) {
+  .DeveloperPortal__getStarted {
+    max-width: 90vw;
+  }
+}
+
+.DeveloperPortal__quickLinks {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .DeveloperPortal__quickLinks {
+    max-width: 75vw;
+  }
+}
+@media (max-width: 767px) {
+  .DeveloperPortal__quickLinks {
+    max-width: 90vw;
+  }
+}
+
+.DeveloperPortal__quickLinkCard {
+  background-color: #fff;
+  margin: -100px 20px 0 0;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 25;
+  align-items: center;
+  box-shadow: 0 6px 6px #d4d4d4;
+}
+.DeveloperPortal__quickLinkCard p {
+  height: 200px;
+  overflow: hidden;
+  flex-grow: 1;
+}
+.DeveloperPortal__quickLinkCard a {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  background-color: #000;
+  border-radius: 50%;
+  font-weight: normal;
+  transition: font-weight 0.4s;
+  flex-grow: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.DeveloperPortal__quickLinkCard a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.DeveloperPortal__quickLinkCard:last-child {
+  margin-right: 0;
+}
+
+.DeveloperPortal__rules {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  z-index: 3;
+  position: relative;
+  padding: 0 16px 16px 16px;
+  box-shadow: 0 6px 6px #d4d4d4;
+}
+@media (max-width: 991px) {
+  .DeveloperPortal__rules {
+    max-width: 75vw;
+  }
+}
+@media (max-width: 767px) {
+  .DeveloperPortal__rules {
+    max-width: 90vw;
+  }
+}
+
+.DeveloperPortal__reporting {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -80px;
+  padding-top: 80px;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 991px) {
+  .DeveloperPortal__reporting {
+    max-width: 75vw;
+  }
+}
+@media (max-width: 767px) {
+  .DeveloperPortal__reporting {
+    max-width: 90vw;
+  }
+}
+
+.DeveloperPortal__slashes {
+  display: flex;
+  justify-content: space-between;
+  width: 1500px;
+}
+
+.DeveloperPortal__slash {
+  width: 50px;
+  height: 250px;
+  background: #26e990;
+  margin: -277px 0 0 0;
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  transform: skew(-20deg);
+  position: relative;
+  z-index: 0;
+}
+
+#slash1,
+#slash6,
+#slash10,
+#slash11,
+#slash15,
+#slash18 {
+  z-index: 2;
+}
+
+.DeveloperPortal__blackBackground {
+  background-color: #000;
+  margin-bottom: 200px;
+  position: relative;
+  z-index: 1;
+}
+
+.DeveloperPortal__whiteBackground {
+  background-color: #fff;
+  color: #000;
+  padding-bottom: 150px;
+}
+
+.Page1__layout {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Page1__body {
+  flex: 75;
+  padding: 0 16px;
+}
+
+.DeveloperPortalNav__block {
+  background-color: #d4d4d4;
+  flex: 25;
+}
+
+.DeveloperPortalNav__list {
+  list-style-type: none;
 }
 
 .LetsConnect__block {
