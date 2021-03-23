@@ -89,3 +89,40 @@
     transform: rotate(45deg) translate(-8px, -6px);
   }
 }
+
+.Navigation__dropdownBlock {
+  position: relative;
+}
+
+.Navigation__dropdown {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: $white;
+  transform: translateY(-1em);
+  transition: all 0.5s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.Navigation__dropdown a {
+  padding: 10px 5px;
+  color: $black;
+}
+
+.Navigation__dropdown a:hover {
+  background-color: $gray;
+  text-decoration: none;
+}
+
+.Navigation__dropdownBlock:focus .Navigation__dropdown,
+.Navigation__dropdownBlock:focus-within .Navigation__dropdown,
+.Navigation__dropdownBlock:hover .Navigation__dropdown {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.5s;
+}
