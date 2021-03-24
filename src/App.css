@@ -22,34 +22,34 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 42px;
   font-weight: bold;
   margin-bottom: 32px;
 }
 @media (min-width: 992px) and (max-width: 1280px) {
   h1 {
-    font-size: 34px;
+    font-size: 36px;
   }
 }
 @media (max-width: 991px) {
   h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 38px;
   font-weight: bold;
   margin: 20px 0;
 }
 @media (min-width: 992px) and (max-width: 1280px) {
   h2 {
-    font-size: 34px;
+    font-size: 32px;
   }
 }
 @media (max-width: 991px) {
   h2 {
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 
@@ -116,6 +116,8 @@ a {
 a:hover {
   color: #26e990;
   text-decoration: underline;
+  cursor: pointer;
+  font-weight: normal;
 }
 
 [data-aos=slide-up] {
@@ -595,8 +597,8 @@ a:hover {
 }
 
 .DeveloperPortal__block {
-  background-color: #000;
-  color: #fff;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .DeveloperPortal__header {
@@ -628,12 +630,15 @@ a:hover {
 }
 
 .DeveloperPortal__headerTitle {
-  border-right: 3px solid #26e990;
   padding-left: 0;
 }
 
 .DeveloperPortal__headerCaption {
-  border-right: 3px solid #26e990;
+  border-left: 3px solid #26e990;
+}
+
+.DeveloperPortal__headerCaption--bold {
+  border-left: 3px solid #26e990;
 }
 
 .DeveloperPortal__getStarted {
@@ -712,10 +717,7 @@ a:hover {
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
-  background-color: #fff;
-  z-index: 3;
-  position: relative;
-  padding: 0 16px 16px 16px;
+  margin-top: 64px;
   box-shadow: 0 6px 6px #d4d4d4;
 }
 @media (max-width: 991px) {
@@ -729,14 +731,39 @@ a:hover {
   }
 }
 
+.DeveloperPortal__rulesContent {
+  padding: 16px;
+}
+
+.DeveloperPortal__link {
+  font-weight: 600;
+  transition: font-weight 0.3s;
+  display: flex;
+  width: fit-content;
+}
+
+.DeveloperPortal__link:hover {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.DeveloperPortal__linkTitle {
+  color: #000;
+  margin-right: 10px;
+}
+
+.DeveloperPortal__linkTitle--white {
+  color: #fff;
+  margin-right: 10px;
+}
+
 .DeveloperPortal__reporting {
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
-  margin-top: -80px;
-  padding-top: 80px;
   position: relative;
   z-index: 1;
+  color: #fff;
 }
 @media (max-width: 991px) {
   .DeveloperPortal__reporting {
@@ -749,45 +776,23 @@ a:hover {
   }
 }
 
-.DeveloperPortal__slashes {
-  display: flex;
-  justify-content: space-between;
-  width: 1500px;
-}
-
-.DeveloperPortal__slash {
-  width: 50px;
+.DeveloperPortal__logoBars {
+  background-image: url("../../images/LogoBars.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 250px;
-  background: #26e990;
-  margin: -277px 0 0 0;
-  -webkit-transform: skew(20deg);
-  -moz-transform: skew(20deg);
-  -o-transform: skew(20deg);
-  transform: skew(-20deg);
-  position: relative;
-  z-index: 0;
-}
-
-#slash1,
-#slash6,
-#slash10,
-#slash11,
-#slash15,
-#slash18 {
-  z-index: 2;
 }
 
 .DeveloperPortal__blackBackground {
   background-color: #000;
-  margin-bottom: 200px;
-  position: relative;
-  z-index: 1;
+  color: #fff;
+  padding: 32px 0;
 }
 
 .DeveloperPortal__whiteBackground {
   background-color: #fff;
   color: #000;
-  padding-bottom: 150px;
 }
 
 .Page1__layout {

@@ -83,4 +83,6 @@ a {
 a:hover {
   color: $green;
   text-decoration: underline;
+  cursor: pointer;
+  font-weight: normal;
 }

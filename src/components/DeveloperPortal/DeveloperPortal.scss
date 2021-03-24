@@ -1,6 +1,6 @@
 .DeveloperPortal__block {
-  background-color: $black;
-  color: $white;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .DeveloperPortal__header {
@@ -20,12 +20,15 @@
 }
 
 .DeveloperPortal__headerTitle {
-  border-right: 3px solid $green;
   padding-left: 0;
 }
 
 .DeveloperPortal__headerCaption {
-  border-right: 3px solid $green;
+  border-left: 3px solid $green;
+}
+
+.DeveloperPortal__headerCaption--bold {
+  border-left: 3px solid $green;
 }
 
 .DeveloperPortal__getStarted {
@@ -81,58 +84,58 @@
 
 .DeveloperPortal__rules {
   @include body-width;
-  background-color: $white;
-  z-index: 3;
-  position: relative;
-  padding: 0 16px 16px 16px;
+  margin-top: 64px;
   box-shadow: 0 6px 6px $gray;
+}
+
+.DeveloperPortal__rulesContent {
+  padding: 16px;
+}
+
+.DeveloperPortal__link {
+  font-weight: 600;
+  transition: font-weight 0.3s;
+  display: flex;
+  width: fit-content;
+}
+
+.DeveloperPortal__link:hover {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.DeveloperPortal__linkTitle {
+  color: $black;
+  margin-right: 10px;
+}
+
+.DeveloperPortal__linkTitle--white {
+  color: $white;
+  margin-right: 10px;
 }
 
 .DeveloperPortal__reporting {
   @include body-width;
-  margin-top: -80px;
-  padding-top: 80px;
   position: relative;
   z-index: 1;
+  color: $white;
 }
 
-.DeveloperPortal__slashes {
-  display: flex;
-  justify-content: space-between;
-  width: 1500px;
-}
-
-.DeveloperPortal__slash {
-  width: 50px;
+.DeveloperPortal__logoBars {
+  background-image: url("../../images/LogoBars.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 250px;
-  background: $green;
-  margin: -277px 0 0 0;
-  -webkit-transform: skew(20deg);
-  -moz-transform: skew(20deg);
-  -o-transform: skew(20deg);
-  transform: skew(-20deg);
-  position: relative;
-  z-index: 0;
-}
-
-#slash1,
-#slash6,
-#slash10,
-#slash11,
-#slash15,
-#slash18 {
-  z-index: 2;
 }
 
 .DeveloperPortal__blackBackground {
   background-color: $black;
-  margin-bottom: 200px;
-  position: relative;
-  z-index: 1;
+  color: $white;
+  padding: 32px 0;
 }
 
 .DeveloperPortal__whiteBackground {
   background-color: $white;
   color: $black;
-  padding-bottom: 150px;
 }

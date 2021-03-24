@@ -7,16 +7,6 @@ const DeveloperPortal = (props) => {
     props.onPathChange("developer-portal");
   }, [props]);
 
-  const SlashBar = [];
-  for (let i = 0; i < 16; i++) {
-    let idName = "slash" + i;
-    SlashBar.push(
-      <div className="DeveloperPortal__slash" id={idName}>
-        {" "}
-      </div>
-    );
-  }
-
   return (
     <div className="DeveloperPortal__block Component">
       <div className="DeveloperPortal__blackBackground">
@@ -30,9 +20,9 @@ const DeveloperPortal = (props) => {
               Unified Decentralized Universally Accessible Social Graph
               Protocol.
             </p>
-            <p className="DeveloperPortal__headerCaption--bold">
-              It’s time to build.
-            </p>
+            <h2 className="DeveloperPortal__headerCaption--bold">
+              It’s time to build
+            </h2>
           </div>
         </div>
         <div className="DeveloperPortal__getStarted">
@@ -54,11 +44,13 @@ const DeveloperPortal = (props) => {
             something, or you’re just wondering where the most appropriate place
             to start is, please post and we’ll do our best to help. You can also
             reach us by filing an issue in any of our repositories, of course.
-            If you need to reach us privately, please email
-            hello@projectliberty.io
+            If you need to reach us privately, please email{" "}
+            <a href="mailto:hello@projectliberty.io">hello@projectliberty.io</a>
+            .
           </p>
         </div>
       </div>
+      <div className="DeveloperPortal__logoBars"> </div>
       <div className="DeveloperPortal__whiteBackground">
         <div className="DeveloperPortal__quickLinks">
           <div className="DeveloperPortal__quickLinkCard">
@@ -67,7 +59,7 @@ const DeveloperPortal = (props) => {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
               labore odit veniam! Beatae dolore est incidunt nulla.
             </p>
-            <Link to="/DSNP">==</Link>
+            <Link to="/DSNP">&#x2192;</Link>
           </div>
           <div className="DeveloperPortal__quickLinkCard">
             <h3>Dev Environment</h3>
@@ -75,7 +67,7 @@ const DeveloperPortal = (props) => {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
               eaque illo minus veniam. Ab adipisci alias beatae doloribus.
             </p>
-            <Link to="/DevEnvironment">==</Link>
+            <Link to="/DevEnvironment">&#x2192;</Link>
           </div>
           <div className="DeveloperPortal__quickLinkCard">
             <h3>Testnet</h3>
@@ -83,7 +75,7 @@ const DeveloperPortal = (props) => {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Architecto atque dolore ea eaque earum, error id illo incidunt.
             </p>
-            <Link to="/TestNet">==</Link>
+            <Link to="/TestNet">&#x2192;</Link>
           </div>
           <div className="DeveloperPortal__quickLinkCard">
             <h3>SDK</h3>
@@ -91,30 +83,42 @@ const DeveloperPortal = (props) => {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
               asperiores assumenda deleniti doloremque ducimus expedita.
             </p>
-            <Link to="/SDK">==</Link>
+            <Link to="/SDK">&#x2192;</Link>
           </div>
         </div>
         <div className="DeveloperPortal__rules">
-          <h2>Contribution Guidelines & Community Standards</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
-            delectus ducimus eveniet facilis incidunt itaque, iure laboriosam
-            magnam odit perferendis placeat quae quisquam ratione saepe
-            voluptatibus. Adipisci deleniti quaerat reprehenderit. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit. Ab amet asperiores
-            delectus, explicabo ipsa magnam modi recusandae velit. Aliquam
-            consequuntur debitis, laborum libero magni minus nihil quas quos rem
-            voluptatem!
-          </p>
-          <p>
-            <a>Contribution Guide</a>
-          </p>
-          <p>
-            <a>Code of Conduct</a>
-          </p>
+          <div className="DeveloperPortal__rulesContent">
+            <h2>Contribution Guidelines & Community Standards</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+              delectus ducimus eveniet facilis incidunt itaque, iure laboriosam
+              magnam odit perferendis placeat quae quisquam ratione saepe
+              voluptatibus. Adipisci deleniti quaerat reprehenderit. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit. Ab amet asperiores
+              delectus, explicabo ipsa magnam modi recusandae velit. Aliquam
+              consequuntur debitis, laborum libero magni minus nihil quas quos
+              rem voluptatem!
+            </p>
+            <p>
+              <a className="DeveloperPortal__link">
+                <div className="DeveloperPortal__linkTitle">
+                  Contribution Guide
+                </div>
+                &#x2192;
+              </a>
+            </p>
+            <p>
+              <a className="DeveloperPortal__link">
+                <div className="DeveloperPortal__linkTitle">
+                  Code of Conduct
+                </div>
+                &#x2192;
+              </a>
+            </p>
+          </div>
         </div>
       </div>
-      <div className="DeveloperPortal__slashes">{SlashBar}</div>
+      <div className="DeveloperPortal__logoBars"> </div>
       <div className="DeveloperPortal__blackBackground">
         <div className="DeveloperPortal__reporting">
           <h2>Reporting Secure Vulnerabilities</h2>
@@ -124,7 +128,12 @@ const DeveloperPortal = (props) => {
             shouldn’t.
           </p>
           <p>
-            <a>Report Vulnerability</a>
+            <a className="DeveloperPortal__link">
+              <div className="DeveloperPortal__linkTitle--white">
+                Report Vulnerability
+              </div>
+              &#x2192;
+            </a>
           </p>
         </div>
       </div>
