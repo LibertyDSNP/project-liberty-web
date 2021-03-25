@@ -60,11 +60,21 @@
   margin: 6px 0;
   background-color: $black;
   transition: 0.4s;
+
+  @media (max-width: 767px) {
+    width: 25px;
+    height: 3px;
+  }
 }
 
 .ExitNavIcon .Navigation__burger--bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
+
+  @media (max-width: 767px) {
+    -webkit-transform: rotate(-45deg) translate(-7px, 5px);
+    transform: rotate(-45deg) translate(-7px, 5px);
+  }
 }
 
 .ExitNavIcon .Navigation__burger--bar2 {
@@ -74,4 +84,9 @@
 .ExitNavIcon .Navigation__burger--bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
+
+  @media (max-width: 767px) {
+    -webkit-transform: rotate(45deg) translate(-8px, -6px);
+    transform: rotate(45deg) translate(-8px, -6px);
+  }
 }
