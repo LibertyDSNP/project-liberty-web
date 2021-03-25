@@ -59,7 +59,13 @@ const Navigation = () => {
               Developer Portal
             </Link>
             <div className="Navigation__dropdown">
-              <Link to="page-1">Link1</Link>
+              <Link
+                to="page-1"
+                className="Navigation__dropdownLink"
+                onClick={() => hideDropdownNav()}
+              >
+                Link1
+              </Link>
             </div>
           </div>
           <span className="Navigation__divider"> / </span>
