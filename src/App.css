@@ -173,23 +173,29 @@ a:hover {
   }
 }
 
-.Footer__textLink {
-  color: #fff;
+.Footer__width > * {
+  padding: 0 16px 0 32px;
 }
 
-.Footer__textSeparator {
-  font-size: 22px;
-  margin: 0 5px;
+.Footer__width {
+  width: fit-content;
+  display: flex;
+  margin: 0 auto;
 }
-@media (max-width: 991px) {
-  .Footer__textSeparator {
-    font-size: 18px;
-  }
+.Footer__width img {
+  max-width: 250px;
+  height: fit-content;
+  border-right: #26e990 3px solid;
 }
-@media (max-width: 767px) {
-  .Footer__textSeparator {
-    font-size: 16px;
-  }
+
+.Footer__column {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.Footer__textLink {
+  color: #fff;
 }
 
 .Navigation__block {
