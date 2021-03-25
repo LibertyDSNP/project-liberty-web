@@ -9,7 +9,7 @@ const Navigation = () => {
 
   useEffect(() => {
     if (showNav) {
-      setNavIconClassName("Navigation__burger ExitNavIcon");
+      setNavIconClassName("Navigation__burger Navigation__exitIcon");
     } else {
       setNavIconClassName("Navigation__burger");
     }
