@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="Footer__block" data-aos-offset="0" data-aos="fade">
       <div className="Footer__width" data-aos-offset="0" data-aos="fade">
         <img src={Logo} />
-        <div className="Footer__column">
+        <div className="Footer__column--first">
           <div className="Footer__column">
             <a
               className="Footer__textLink"
@@ -27,8 +27,9 @@ const Footer = () => {
               About Project Liberty and its Partners
             </a>
           </div>
-          <br />
-          <div>Website last updated: 12/34/56 ©2020 Liberty 3.0 LLC</div>
+          <div className="Footer__lastUpdated">
+            Website last updated: 12/34/56 ©2020 Liberty 3.0 LLC
+          </div>
         </div>
         <div className="Footer__column">
           <Link className="Footer__textLink" to="/privacy-policy">
