@@ -159,17 +159,20 @@ a:hover {
   font-size: 14px;
   font-weight: bold;
   line-height: 25px;
+  width: 100%;
 }
 @media (max-width: 991px) {
   .Footer__block {
     font-size: 12px;
     margin-top: 75px;
+    padding: 20px 0;
   }
 }
 @media (max-width: 767px) {
   .Footer__block {
     font-size: 10px;
     margin-top: 50px;
+    padding: 10px 0;
   }
 }
 
@@ -182,10 +185,14 @@ a:hover {
   display: flex;
   margin: 0 auto;
 }
+@media (max-width: 767px) {
+  .Footer__width {
+    flex-direction: column;
+  }
+}
 .Footer__width img {
   max-width: 250px;
   height: fit-content;
-  border-right: #26e990 3px solid;
 }
 
 .Footer__column {
@@ -193,9 +200,42 @@ a:hover {
   flex-direction: column;
   text-align: left;
 }
+@media (max-width: 767px) {
+  .Footer__column {
+    flex-direction: row;
+  }
+}
+
+.Footer__column > * {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.Footer__column--first {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border-left: #26e990 3px solid;
+}
+@media (max-width: 767px) {
+  .Footer__column--first {
+    border-left: none;
+  }
+}
 
 .Footer__textLink {
   color: #fff;
+}
+
+.Footer__lastUpdated {
+  font-weight: normal;
+  margin-top: 16px;
+}
+@media (max-width: 767px) {
+  .Footer__lastUpdated {
+    margin-top: 0;
+  }
 }
 
 .Navigation__block {
