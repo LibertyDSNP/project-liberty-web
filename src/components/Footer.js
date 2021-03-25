@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="Footer__block" data-aos-offset="0" data-aos="fade">
       <div className="Footer__width" data-aos-offset="0" data-aos="fade">
-        <img src={Logo} />
+        <img src={Logo} alt="footer logo" />
         <div className="Footer__column--first">
           <div className="Footer__column">
             <a
@@ -23,9 +23,9 @@ const Footer = () => {
             >
               Unfinished Labs
             </a>
-            <a className="Footer__textLink">
+            <Link className="Footer__textLink" to="/about">
               About Project Liberty and its Partners
-            </a>
+            </Link>
           </div>
           <div className="Footer__lastUpdated">
             Website last updated: 12/34/56 ©2020 Liberty 3.0 LLC
