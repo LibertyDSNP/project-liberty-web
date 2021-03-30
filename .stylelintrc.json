@@ -18,7 +18,7 @@
       }
     ],
     "selector-max-compound-selectors": 2,
-    "selector-max-id": 0,
+    "selector-max-id": 1,
     "selector-no-qualifying-type": true,
     "sh-waqar/declaration-use-variable": [
       [

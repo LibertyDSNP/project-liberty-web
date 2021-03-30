@@ -7,7 +7,13 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import DeveloperPortal from "./components/DeveloperPortal";
+import DeveloperPortal from "./components/DeveloperPortal/DeveloperPortal";
+import Introduction from "./components/DeveloperPortal/Introduction";
+import DSNP from "./components/DeveloperPortal/DSNP";
+import Testnet from "./components/DeveloperPortal/Testnet";
+import Sdk from "./components/DeveloperPortal/SDK";
+import ExampleClient from "./components/DeveloperPortal/ExampleClient";
+import Blog from "./components/DeveloperPortal/Blog";
 import LetsConnect from "./components/LetsConnect";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import CodeOfConduct from "./components/CodeOfConduct";
@@ -35,6 +41,24 @@ const App = () => {
             </Route>
             <Route path="/developer-portal">
               <DeveloperPortal onPathChange={setPathname} />
+            </Route>
+            <Route path="/introduction">
+              <Introduction />
+            </Route>
+            <Route path="/dsnp">
+              <DSNP />
+            </Route>
+            <Route path="/testnet">
+              <Testnet />
+            </Route>
+            <Route path="/skd">
+              <Sdk />
+            </Route>
+            <Route path="/example-client">
+              <ExampleClient />
+            </Route>
+            <Route path="/blog">
+              <Blog />
             </Route>
             <Route path="/lets-connect">
               <LetsConnect onPathChange={setPathname} />

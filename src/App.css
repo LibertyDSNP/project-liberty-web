@@ -22,34 +22,34 @@ body {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 42px;
   font-weight: bold;
   margin-bottom: 32px;
 }
 @media (min-width: 992px) and (max-width: 1280px) {
   h1 {
-    font-size: 34px;
+    font-size: 36px;
   }
 }
 @media (max-width: 991px) {
   h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 38px;
   font-weight: bold;
   margin: 20px 0;
 }
 @media (min-width: 992px) and (max-width: 1280px) {
   h2 {
-    font-size: 34px;
+    font-size: 32px;
   }
 }
 @media (max-width: 991px) {
   h2 {
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 
@@ -116,6 +116,8 @@ a {
 a:hover {
   color: #26e990;
   text-decoration: underline;
+  cursor: pointer;
+  font-weight: normal;
 }
 
 [data-aos=slide-up] {
@@ -266,7 +268,6 @@ a:hover {
   .Navigation__link {
     line-height: 50px;
     font-size: 22px;
-    font-weight: bold;
     text-transform: uppercase;
     padding-right: 16px;
   }
@@ -274,7 +275,7 @@ a:hover {
 
 .Navigation__divider {
   color: #26e990;
-  margin: 0 10px;
+  margin: 0 12px;
   font-weight: bold;
   display: block;
 }
@@ -555,6 +556,288 @@ a:hover {
   .About__articleList {
     padding-inline-start: 30px;
   }
+}
+
+.DeveloperPortal__block {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.DeveloperPortal__header {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+@media (max-width: 991px) {
+  .DeveloperPortal__header {
+    max-width: 75vw;
+  }
+}
+@media (max-width: 767px) {
+  .DeveloperPortal__header {
+    max-width: 90vw;
+  }
+}
+
+.DeveloperPortal__headerText {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.DeveloperPortal__headerText > * {
+  flex: 28;
+  padding: 0 25px;
+}
+
+.DeveloperPortal__headerTitle {
+  padding-left: 0;
+}
+
+.DeveloperPortal__headerCaption {
+  border-left: 3px solid #26e990;
+}
+
+.DeveloperPortal__headerCaption--bold {
+  border-left: 3px solid #26e990;
+}
+
+.DeveloperPortal__getStarted {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 991px) {
+  .DeveloperPortal__getStarted {
+    max-width: 75vw;
+  }
+}
+@media (max-width: 767px) {
+  .DeveloperPortal__getStarted {
+    max-width: 90vw;
+  }
+}
+
+.DeveloperPortal__quickLinks {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+@media (max-width: 991px) {
+  .DeveloperPortal__quickLinks {
+    max-width: 75vw;
+  }
+}
+@media (max-width: 767px) {
+  .DeveloperPortal__quickLinks {
+    max-width: 90vw;
+  }
+}
+
+.DeveloperPortal__quickLinkCard {
+  background-color: #fff;
+  margin: -100px 20px 0 0;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 25;
+  align-items: center;
+  box-shadow: 0 6px 6px #d4d4d4;
+}
+.DeveloperPortal__quickLinkCard p {
+  height: 200px;
+  overflow: hidden;
+  flex-grow: 1;
+}
+.DeveloperPortal__quickLinkCard a {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  background-color: #000;
+  border-radius: 50%;
+  font-weight: normal;
+  transition: font-weight 0.4s;
+  flex-grow: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.DeveloperPortal__quickLinkCard a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.DeveloperPortal__quickLinkCard:last-child {
+  margin-right: 0;
+}
+
+.DeveloperPortal__rules {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 64px;
+  box-shadow: 0 6px 6px #d4d4d4;
+}
+@media (max-width: 991px) {
+  .DeveloperPortal__rules {
+    max-width: 75vw;
+  }
+}
+@media (max-width: 767px) {
+  .DeveloperPortal__rules {
+    max-width: 90vw;
+  }
+}
+
+.DeveloperPortal__rulesContent {
+  padding: 16px;
+}
+
+.DeveloperPortal__link {
+  transition: font-weight 0.3s;
+  display: flex;
+  width: fit-content;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) and (max-width: 1280px) {
+  .DeveloperPortal__link {
+    font-size: 20px;
+    line-height: 33px;
+  }
+}
+@media (max-width: 991px) {
+  .DeveloperPortal__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.DeveloperPortal__link:hover {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.DeveloperPortal__linkTitle {
+  color: #000;
+  margin-right: 10px;
+}
+
+.DeveloperPortal__linkTitle--white {
+  color: #fff;
+  margin-right: 10px;
+}
+
+.DeveloperPortal__reporting {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+@media (max-width: 991px) {
+  .DeveloperPortal__reporting {
+    max-width: 75vw;
+  }
+}
+@media (max-width: 767px) {
+  .DeveloperPortal__reporting {
+    max-width: 90vw;
+  }
+}
+
+.DeveloperPortal__logoBars {
+  background-image: url("../../images/LogoBars.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 250px;
+}
+
+.DeveloperPortal__blackBackground {
+  background-color: #000;
+  color: #fff;
+  padding: 32px 0;
+}
+
+.DeveloperPortal__whiteBackground {
+  background-color: #fff;
+  color: #000;
+}
+
+.Page1__layout {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Page1__body {
+  flex: 75;
+  padding: 0 16px;
+}
+
+.Navigation__dropdownBlock {
+  position: relative;
+}
+
+@media (min-width: 971px) {
+  .DeveloperPortalNav__topNav {
+    box-shadow: 0 3px 3px -3px black;
+    margin-top: 8px;
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background-color: #fff;
+    transform: translateY(-1em);
+    transition: all 0.5s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    z-index: 3;
+  }
+}
+
+@media (min-width: 971px) {
+  .Navigation__dropdownBlock:focus .DeveloperPortalNav__topNav,
+.Navigation__dropdownBlock:focus-within .DeveloperPortalNav__topNav,
+.Navigation__dropdownBlock:hover .DeveloperPortalNav__topNav {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s, 0s, 0.5s;
+  }
+}
+
+.DeveloperPortalNav__dropdownLink {
+  padding: 10px 5px;
+  color: #000;
+  display: flex;
+  justify-self: stretch;
+  background-color: #fff;
+  transition: background-color 0.2s;
+  border-bottom: #d4d4d4 1px solid;
+}
+.DeveloperPortalNav__dropdownLink:last-child {
+  border-bottom: none;
+}
+@media (max-width: 970px) {
+  .DeveloperPortalNav__dropdownLink {
+    width: 200px;
+  }
+}
+
+.DeveloperPortalNav__dropdownLink:hover {
+  background: #d4d4d4;
+  color: #000;
+  text-decoration: none;
 }
 
 .LetsConnect__block {

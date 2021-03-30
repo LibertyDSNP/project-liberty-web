@@ -1,0 +1,154 @@
+.DeveloperPortal__block {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.DeveloperPortal__header {
+  @include body-width;
+  padding-top: 24px;
+}
+
+.DeveloperPortal__headerText {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.DeveloperPortal__headerText > * {
+  flex: 28;
+  padding: 0 25px;
+}
+
+.DeveloperPortal__headerTitle {
+  padding-left: 0;
+}
+
+.DeveloperPortal__headerCaption {
+  border-left: 3px solid $green;
+}
+
+.DeveloperPortal__headerCaption--bold {
+  border-left: 3px solid $green;
+}
+
+.DeveloperPortal__getStarted {
+  @include body-width;
+}
+
+.DeveloperPortal__quickLinks {
+  @include body-width;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.DeveloperPortal__quickLinkCard {
+  background-color: $white;
+  margin: -100px 20px 0 0;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 25;
+  align-items: center;
+  box-shadow: 0 6px 6px $gray;
+
+  p {
+    height: 200px;
+    overflow: hidden;
+    flex-grow: 1;
+  }
+
+  a {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    background-color: $black;
+    border-radius: 50%;
+    font-weight: normal;
+    transition: font-weight 0.4s;
+    flex-grow: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a:hover {
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+
+.DeveloperPortal__quickLinkCard:last-child {
+  margin-right: 0;
+}
+
+.DeveloperPortal__rules {
+  @include body-width;
+  margin-top: 64px;
+  box-shadow: 0 6px 6px $gray;
+}
+
+.DeveloperPortal__rulesContent {
+  padding: 16px;
+}
+
+.DeveloperPortal__link {
+  transition: font-weight 0.3s;
+  display: flex;
+  width: fit-content;
+  font-size: $desktop-paragraph;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 20px;
+
+  @media (min-width: 992px) and (max-width: 1280px) {
+    font-size: $laptop-paragraph;
+    line-height: 33px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: $mobile-paragraph;
+    line-height: 30px;
+  }
+}
+
+.DeveloperPortal__link:hover {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.DeveloperPortal__linkTitle {
+  color: $black;
+  margin-right: 10px;
+}
+
+.DeveloperPortal__linkTitle--white {
+  color: $white;
+  margin-right: 10px;
+}
+
+.DeveloperPortal__reporting {
+  @include body-width;
+  position: relative;
+  z-index: 1;
+  color: $white;
+}
+
+.DeveloperPortal__logoBars {
+  background-image: url("../../images/LogoBars.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 250px;
+}
+
+.DeveloperPortal__blackBackground {
+  background-color: $black;
+  color: $white;
+  padding: 32px 0;
+}
+
+.DeveloperPortal__whiteBackground {
+  background-color: $white;
+  color: $black;
+}
