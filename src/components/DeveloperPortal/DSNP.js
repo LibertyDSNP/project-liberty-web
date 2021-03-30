@@ -1,16 +1,12 @@
-import React, { useEffect } from "react";
+import React from "react";
 import DeveloperPortalNav from "./DeveloperPortalNav";
 
-const Page1 = (props) => {
-  useEffect(() => {
-    props.onPathChange("page-1");
-  }, [props]);
-
+const DSNP = () => {
   return (
     <div className="Page1__block Component">
-      <h1>DeveloperPortal</h1>
+      <h1>DSNP</h1>
       <div className="Page1__layout">
-        <DeveloperPortalNav />
+        <DeveloperPortalNav blockClassName="DeveloperPortalNav__sideNav" />
         <div className="Page1__body">
           <h2>Body</h2>
         </div>
@@ -19,4 +15,4 @@ const Page1 = (props) => {
   );
 };
 
-export default Page1;
+export default DSNP;

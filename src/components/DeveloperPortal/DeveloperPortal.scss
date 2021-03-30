@@ -93,10 +93,23 @@
 }
 
 .DeveloperPortal__link {
-  font-weight: 600;
   transition: font-weight 0.3s;
   display: flex;
   width: fit-content;
+  font-size: $desktop-paragraph;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 20px;
+
+  @media (min-width: 992px) and (max-width: 1280px) {
+    font-size: $laptop-paragraph;
+    line-height: 33px;
+  }
+
+  @media (max-width: 991px) {
+    font-size: $mobile-paragraph;
+    line-height: 30px;
+  }
 }
 
 .DeveloperPortal__link:hover {

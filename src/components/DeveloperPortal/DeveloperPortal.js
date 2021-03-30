@@ -11,7 +11,7 @@ const DeveloperPortal = (props) => {
     <div className="DeveloperPortal__block Component">
       <div className="DeveloperPortal__blackBackground">
         <div className="DeveloperPortal__header">
-          <img src={Logo} />
+          <img src={Logo} alt="logo" />
           <div className="DeveloperPortal__headerText">
             <h1 className="DeveloperPortal__headerTitle">
               Liberty Developer Resources
@@ -99,22 +99,16 @@ const DeveloperPortal = (props) => {
               consequuntur debitis, laborum libero magni minus nihil quas quos
               rem voluptatem!
             </p>
-            <p>
-              <a className="DeveloperPortal__link">
-                <div className="DeveloperPortal__linkTitle">
-                  Contribution Guide
-                </div>
-                &#x2192;
-              </a>
-            </p>
-            <p>
-              <a className="DeveloperPortal__link">
-                <div className="DeveloperPortal__linkTitle">
-                  Code of Conduct
-                </div>
-                &#x2192;
-              </a>
-            </p>
+            <a className="DeveloperPortal__link" href="#">
+              <div className="DeveloperPortal__linkTitle">
+                Contribution Guide
+              </div>
+              &#x2192;
+            </a>
+            <a className="DeveloperPortal__link" href="#">
+              <div className="DeveloperPortal__linkTitle">Code of Conduct</div>
+              &#x2192;
+            </a>
           </div>
         </div>
       </div>
@@ -127,14 +121,12 @@ const DeveloperPortal = (props) => {
             projects here, and you feel that it is sensitive enough that it
             shouldn’t.
           </p>
-          <p>
-            <a className="DeveloperPortal__link">
-              <div className="DeveloperPortal__linkTitle--white">
-                Report Vulnerability
-              </div>
-              &#x2192;
-            </a>
-          </p>
+          <a className="DeveloperPortal__link" href="#">
+            <div className="DeveloperPortal__linkTitle--white">
+              Report Vulnerability
+            </div>
+            &#x2192;
+          </a>
         </div>
       </div>
     </div>

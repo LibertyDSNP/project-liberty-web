@@ -1,13 +1,28 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const DeveloperPortalNav = () => {
+const DeveloperPortalNav = (blockClassName) => {
+  console.log(blockClassName);
   return (
-    <div className="DeveloperPortalNav__block">
-      <ul className="DeveloperPortalNav__list">
-        <li>li1</li>
-        <li>li2</li>
-        <li>li3</li>
-      </ul>
+    <div className="DeveloperPortalNav__list">
+      <Link to="/introduction" className="DeveloperPortalNav__dropdownLink">
+        Introduction
+      </Link>
+      <Link to="/dsnp" className="DeveloperPortalNav__dropdownLink">
+        Distributed Social Networking Protocol (DSNP)
+      </Link>
+      <Link to="/testnet" className="DeveloperPortalNav__dropdownLink">
+        Testnet
+      </Link>
+      <Link to="/skd" className="DeveloperPortalNav__dropdownLink">
+        SDK
+      </Link>
+      <Link to="/example-client" className="DeveloperPortalNav__dropdownLink">
+        Example Client
+      </Link>
+      <Link to="/blog" className="DeveloperPortalNav__dropdownLink">
+        Blog
+      </Link>
     </div>
   );
 };
