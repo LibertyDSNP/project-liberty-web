@@ -41,16 +41,16 @@ const App = () => {
               <DeveloperPortal onPathChange={setPathname} />
             </Route>
             <Route path="/testnet">
-              <Testnet />
+              <Testnet onPathChange={setPathname} />
             </Route>
             <Route path="/sdk">
-              <Sdk />
+              <Sdk onPathChange={setPathname} />
             </Route>
             <Route path="/example-client">
-              <ExampleClient />
+              <ExampleClient onPathChange={setPathname} />
             </Route>
             <Route path="/blog">
-              <Blog />
+              <Blog onPathChange={setPathname} />
             </Route>
             <Route path="/lets-connect">
               <LetsConnect onPathChange={setPathname} />
