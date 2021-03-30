@@ -43,7 +43,7 @@ const App = () => {
             <Route path="/testnet">
               <Testnet />
             </Route>
-            <Route path="/skd">
+            <Route path="/sdk">
               <Sdk />
             </Route>
             <Route path="/example-client">
