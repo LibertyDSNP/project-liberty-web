@@ -3,13 +3,11 @@ import DeveloperPortalNav from "./DeveloperPortalNav";
 
 const Introduction = () => {
   return (
-    <div className="Page1__block Component">
-      <h1>Introduction</h1>
-      <div className="Page1__layout">
-        <DeveloperPortalNav blockClassName="DeveloperPortalNav__sideNav" />
-        <div className="Page1__body">
-          <h2>Body</h2>
-        </div>
+    <div className="Introduction__layout Component">
+      <DeveloperPortalNav blockClassName="DeveloperPortalNav__sideNav" />
+      <div className="Introduction__content">
+        <h1>Introduction</h1>
+        <h2>Body</h2>
       </div>
     </div>
   );

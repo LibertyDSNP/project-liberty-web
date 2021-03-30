@@ -3,13 +3,11 @@ import DeveloperPortalNav from "./DeveloperPortalNav";
 
 const Sdk = () => {
   return (
-    <div className="Page1__block Component">
-      <h1>SDK</h1>
-      <div className="Page1__layout">
-        <DeveloperPortalNav blockClassName="DeveloperPortalNav__sideNav" />
-        <div className="Page1__body">
-          <h2>Body</h2>
-        </div>
+    <div className="SDK__layout Component">
+      <DeveloperPortalNav blockClassName="DeveloperPortalNav__sideNav" />
+      <div className="SDK__content">
+        <h1>SDK</h1>
+        <h2>Body</h2>
       </div>
     </div>
   );
