@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import DeveloperPortalNav from "./DeveloperPortal/DeveloperPortalNav";
 
 const Navigation = () => {
-  const [showNav, setShowNav] = React.useState(false);
+  const initiallyShowMenu = window.innerWidth > 970 ? true : false;
+  const [showNav, setShowNav] = React.useState(initiallyShowMenu);
   const [navIconClassName, setNavIconClassName] = React.useState(
     "Navigation__burger"
   );
@@ -58,15 +60,7 @@ const Navigation = () => {
             >
               Developer Portal
             </Link>
-            <div className="Navigation__dropdown">
-              <Link
-                to="page-1"
-                className="Navigation__dropdownLink"
-                onClick={() => hideDropdownNav()}
-              >
-                Link1
-              </Link>
-            </div>
+            <DeveloperPortalNav blockClassName="DeveloperPortalNav__topNav" />
           </div>
           <span className="Navigation__divider"> / </span>
           <Link
