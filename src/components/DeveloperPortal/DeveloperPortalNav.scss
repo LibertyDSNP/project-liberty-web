@@ -1,15 +1,10 @@
 .Navigation__dropdownBlock {
-  flex: 25;
-}
-
-.DeveloperPortalNav__list {
-  list-style-type: none;
+  position: relative;
 }
 
 .DeveloperPortalNav__topNav {
-  display: none;
-
   @media (min-width: 971px) {
+    box-shadow: 0 3px 3px -3px black;
     margin-top: 8px;
     opacity: 0;
     position: absolute;
@@ -18,7 +13,7 @@
     visibility: hidden;
     top: 100%;
     left: 0;
-    width: 100%;
+    width: 200px;
     background-color: $white;
     transform: translateY(-1em);
     transition: all 0.5s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
@@ -26,28 +21,14 @@
   }
 }
 
-.Navigation__dropdownBlock {
-  position: relative;
-}
-
-.DeveloperPortalNav__list {
-  display: none;
-
+.Navigation__dropdownBlock:focus .DeveloperPortalNav__topNav,
+.Navigation__dropdownBlock:focus-within .DeveloperPortalNav__topNav,
+.Navigation__dropdownBlock:hover .DeveloperPortalNav__topNav {
   @media (min-width: 971px) {
-    margin-top: 8px;
-    padding: 6px;
-    background-color: $white;
-    opacity: 0;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    visibility: hidden;
-    top: 100%;
-    left: 0;
-    width: 250px;
-    transform: translateY(-1em);
-    transition: all 0.5s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-    z-index: 3;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0s, 0s, 0.5s;
   }
 }
 
@@ -56,13 +37,16 @@
   color: $black;
   display: flex;
   justify-self: stretch;
-  height: 100%;
   background-color: $white;
   transition: background-color 0.2s;
   border-bottom: $gray 1px solid;
 
   &:last-child {
     border-bottom: none;
+  }
+
+  @media (max-width: 970px) {
+    width: 200px;
   }
 }
 
@@ -72,19 +56,3 @@
   text-decoration: none;
 }
 
-.Navigation__dropdownBlock:active .DeveloperPortalNav__list {
-  display: block;
-}
-
-.Navigation__dropdownBlock:focus .DeveloperPortalNav__list,
-.Navigation__dropdownBlock:focus-within .DeveloperPortalNav__list,
-.Navigation__dropdownBlock:hover .DeveloperPortalNav__list {
-  display: block;
-
-  @media (min-width: 971px) {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-    transition-delay: 0s, 0s, 0.5s;
-  }
-}

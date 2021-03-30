@@ -2,9 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const DeveloperPortalNav = (blockClassName) => {
-  console.log(blockClassName);
+  const getClassName =
+    blockClassName.blockClassName + " DeveloperPortalNav__list";
   return (
-    <div className="DeveloperPortalNav__list">
+    <div className={getClassName}>
       <Link to="/introduction" className="DeveloperPortalNav__dropdownLink">
         Introduction
       </Link>
