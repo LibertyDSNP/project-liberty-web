@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import DeveloperPortalNav from "./DeveloperPortalNav";
 
-const Blog = () => {
+const Blog = (props) => {
+  useEffect(() => {
+    props.onPathChange("developer-portal");
+  }, [props]);
+
   return (
     <div className="Blog__layout Component">
       <DeveloperPortalNav blockClassName="DeveloperPortalNav__sideNav" />
