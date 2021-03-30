@@ -35,7 +35,7 @@ const DeveloperPortalNav = (blockClassName) => {
       <Link to="/testnet" className="DeveloperPortalNav__dropdownLink">
         Testnet
       </Link>
-      <Link to="/skd" className="DeveloperPortalNav__dropdownLink">
+      <Link to="/sdk" className="DeveloperPortalNav__dropdownLink">
         SDK
       </Link>
       <Link to="/example-client" className="DeveloperPortalNav__dropdownLink">

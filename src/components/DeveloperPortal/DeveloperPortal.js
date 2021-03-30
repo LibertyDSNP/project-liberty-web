@@ -29,18 +29,31 @@ const DeveloperPortal = (props) => {
           <h2>Get Started</h2>
           <p>
             Everything here is open source. Our development roadmap is focused
-            on our mission of reclaiming the social graph for the common good
-            and is guided by our principles.
+            on our <Link to="/about">mission</Link> of reclaiming the social
+            graph for the common good and is guided by our principles.
           </p>
           <p>
-            If this is your first visit, the Decentralized Social Networking
-            Protocol (DSNP) whitepaper is a good place to start. Where you go
-            after that will depend on your goals; the navigation panel gives
-            some useful entry points.
+            If this is your first visit, the{" "}
+            <a
+              href="https://github.com/LibertyDSNP/papers"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Decentralized Social Networking Protocol (DSNP) whitepaper
+            </a>{" "}
+            is a good place to start. Where you go after that will depend on
+            your goals; the navigation panel gives some useful entry points.
           </p>
           <p>
-            The first and most important entry point is our Discussion Forums.
-            All questions and suggestions are welcome! If you’re curious about
+            The first and most important entry point is our{" "}
+            <a
+              href="https://forums.projectliberty.io/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Discussion Forums
+            </a>
+            . All questions and suggestions are welcome! If you’re curious about
             something, or you’re just wondering where the most appropriate place
             to start is, please post and we’ll do our best to help. You can also
             reach us by filing an issue in any of our repositories, of course.
@@ -59,15 +72,21 @@ const DeveloperPortal = (props) => {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
               labore odit veniam! Beatae dolore est incidunt nulla.
             </p>
-            <Link to="/DSNP">&#x2192;</Link>
+            <a
+              href="http://spec.projectliberty.io/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              &#x2192;
+            </a>
           </div>
           <div className="DeveloperPortal__quickLinkCard">
-            <h3>Dev Environment</h3>
+            <h3>Example Client</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
               eaque illo minus veniam. Ab adipisci alias beatae doloribus.
             </p>
-            <Link to="/DevEnvironment">&#x2192;</Link>
+            <Link to="/example-client">&#x2192;</Link>
           </div>
           <div className="DeveloperPortal__quickLinkCard">
             <h3>Testnet</h3>
@@ -75,7 +94,7 @@ const DeveloperPortal = (props) => {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Architecto atque dolore ea eaque earum, error id illo incidunt.
             </p>
-            <Link to="/TestNet">&#x2192;</Link>
+            <Link to="/testnet">&#x2192;</Link>
           </div>
           <div className="DeveloperPortal__quickLinkCard">
             <h3>SDK</h3>
@@ -83,7 +102,7 @@ const DeveloperPortal = (props) => {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
               asperiores assumenda deleniti doloremque ducimus expedita.
             </p>
-            <Link to="/SDK">&#x2192;</Link>
+            <Link to="/sdk">&#x2192;</Link>
           </div>
         </div>
         <div className="DeveloperPortal__rules">
@@ -99,13 +118,23 @@ const DeveloperPortal = (props) => {
               consequuntur debitis, laborum libero magni minus nihil quas quos
               rem voluptatem!
             </p>
-            <a className="DeveloperPortal__link" href="#">
+            <a
+              className="DeveloperPortal__link"
+              href="https://github.com/LibertyDSNP/liberty-web/pull/13"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div className="DeveloperPortal__linkTitle">
                 Contribution Guide
               </div>
               &#x2192;
             </a>
-            <a className="DeveloperPortal__link" href="#">
+            <a
+              className="DeveloperPortal__link"
+              href="https://www.projectliberty.io/codeOfConduct.html"
+              target="_blank"
+              rel="noreferrer"
+            >
               <div className="DeveloperPortal__linkTitle">Code of Conduct</div>
               &#x2192;
             </a>
