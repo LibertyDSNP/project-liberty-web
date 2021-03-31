@@ -42,7 +42,8 @@ const DeveloperPortal = (props) => {
               Decentralized Social Networking Protocol (DSNP) whitepaper
             </a>{" "}
             is a good place to start. Where you go after that will depend on
-            your goals; the navigation panel gives some useful entry points.
+            your goals; the navigation panel below gives some useful entry
+            points.
           </p>
           <p>
             The first and most important entry point is our{" "}
@@ -54,10 +55,10 @@ const DeveloperPortal = (props) => {
               Discussion Forums
             </a>
             . All questions and suggestions are welcome! If you’re curious about
-            something, or you’re just wondering where the most appropriate place
-            to start is, please post and we’ll do our best to help. You can also
-            reach us by filing an issue in any of our repositories, of course.
-            If you need to reach us privately, please email{" "}
+            something or just wondering where the most appropriate place to
+            start is, please post and we’ll do our best to help. You can also
+            reach us by filing an issue in any of our repositories. If you need
+            to reach us privately, please email{" "}
             <a href="mailto:hello@projectliberty.io">hello@projectliberty.io</a>
             .
           </p>
@@ -109,14 +110,13 @@ const DeveloperPortal = (props) => {
           <div className="DeveloperPortal__rulesContent">
             <h2>Contribution Guidelines & Community Standards</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
-              delectus ducimus eveniet facilis incidunt itaque, iure laboriosam
-              magnam odit perferendis placeat quae quisquam ratione saepe
-              voluptatibus. Adipisci deleniti quaerat reprehenderit. Lorem ipsum
-              dolor sit amet, consectetur adipisicing elit. Ab amet asperiores
-              delectus, explicabo ipsa magnam modi recusandae velit. Aliquam
-              consequuntur debitis, laborum libero magni minus nihil quas quos
-              rem voluptatem!
+              Development activity across Project Liberty shares a common set of
+              Contribution Guidelines and a single Code of Conduct. Some
+              repositories will have additional technology-specific developer
+              documentation, but we try to keep the contribution workflow as
+              consistent as possible from repository to repository, so that a
+              participant in one project can easily make contributions elsewhere
+              as desired.
             </p>
             <a
               className="DeveloperPortal__link"
@@ -125,7 +125,7 @@ const DeveloperPortal = (props) => {
               rel="noreferrer"
             >
               <div className="DeveloperPortal__linkTitle">
-                Contribution Guide
+                Contribution Guidelines
               </div>
               &#x2192;
             </a>
@@ -146,9 +146,9 @@ const DeveloperPortal = (props) => {
         <div className="DeveloperPortal__reporting">
           <h2>Reporting Secure Vulnerabilities</h2>
           <p>
-            If you have discovered a security vulnerability in one of the
-            projects here, and you feel that it is sensitive enough that it
-            shouldn’t.
+            If you discover a security vulnerability in one of the projects
+            here, and you feel that it's sensitive enough that it shouldn’t be
+            posted publicly, please report it (and thank you!).
           </p>
           <a className="DeveloperPortal__link" href="#">
             <div className="DeveloperPortal__linkTitle--white">
