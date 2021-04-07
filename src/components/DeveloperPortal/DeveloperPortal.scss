@@ -1,6 +1,7 @@
 .DeveloperPortal__block {
   width: 100%;
   overflow-x: hidden;
+  margin-bottom: -165px;
 }
 
 .DeveloperPortal__header {
@@ -26,6 +27,7 @@
 .DeveloperPortal__headerText > * {
   flex: 28;
   padding: 0 25px;
+  margin: 16px 0;
 }
 
 .DeveloperPortal__headerTitle {
@@ -79,7 +81,7 @@
   box-shadow: 0 6px 6px $gray;
 
   @media (max-width: 991px) {
-    flex-basis: 45%;
+    flex-basis: 42%;
     padding: 10px;
     max-width: 45vw;
     min-width: 0;
@@ -88,13 +90,7 @@
   @media (max-width: 416px) {
     margin: 12px auto;
     max-width: 55vw;
-    min-width: 45vw;
-  }
-
-  p {
-    height: 200px;
-    overflow: hidden;
-    flex-grow: 1;
+    min-width: 40vw;
   }
 
   a {
@@ -121,9 +117,34 @@
   margin-right: 0;
 }
 
+.DeveloperPortal__quickLinkCardIcon {
+  height: 55px;
+  width: auto;
+  margin-bottom: 16px;
+}
+
+.DeveloperPortal__quickLinkCardTitle {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 22px;
+
+  @media (max-width: 416px) {
+    font-size: 17px;
+  }
+}
+
+.DeveloperPortal__quickLinkCardDescription {
+  flex-grow: 1;
+  line-height: 1.4;
+}
+
 .DeveloperPortal__rules {
   @include body-width;
   box-shadow: 0 6px 6px $gray;
+  position: relative;
+  z-index: 10;
+  background-color: $white;
 
   @media (max-width: 991px) {
     max-width: 90vw;
@@ -136,6 +157,7 @@
 
 .DeveloperPortal__rulesContent {
   padding: 50px;
+  margin-top: 50px;
 }
 
 .DeveloperPortal__link {
@@ -176,6 +198,7 @@
 .DeveloperPortal__reportingBlock {
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 .DeveloperPortal__reporting {
@@ -183,7 +206,7 @@
   position: relative;
   z-index: 1;
   color: $white;
-  padding: 50px 0;
+  padding: 100px 0;
 }
 
 .DeveloperPortal__logoBars {
@@ -191,7 +214,8 @@
   justify-content: space-between;
   min-width: 2200px;
   position: relative;
-  margin: 50px 0 -50px 0;
+  margin: -50px 0 -50px 0;
+  overflow: hidden;
 }
 
 .DeveloperPortal__slash {
@@ -215,6 +239,29 @@
 #slash23,
 #slash24 {
   z-index: 2;
+}
+
+.DeveloperPortal__logoBars--two {
+  display: flex;
+  justify-content: space-between;
+  min-width: 2200px;
+  position: relative;
+  margin: -50px 0;
+  overflow: hidden;
+
+  #slash6,
+  #slash10 {
+    z-index: 0;
+  }
+
+  #slash1,
+  #slash19 {
+    z-index: 3;
+
+    @media (max-width: 934px) {
+      z-index: 1;
+    }
+  }
 }
 
 .DeveloperPortal__blackBackground {

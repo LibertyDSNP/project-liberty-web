@@ -1,6 +1,10 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../images/brand-icon.png";
+import DevIcon from "../../images/icons/Dev_Icon.png";
+import DSNPIcon from "../../images/icons/DSNP_Icon.png";
+import SDKIcon from "../../images/icons/SDK_Icon.png";
+import TestnetIcon from "../../images/icons/Testnet_Icon.png";
 
 const DeveloperPortal = (props) => {
   useEffect(() => {
@@ -11,7 +15,7 @@ const DeveloperPortal = (props) => {
   for (let i = 0; i < 25; i++) {
     let idName = "slash" + i;
     SlashBar.push(
-      <div className="DeveloperPortal__slash" id={idName}>
+      <div className="DeveloperPortal__slash" id={idName} key={idName}>
         {" "}
       </div>
     );
@@ -23,16 +27,22 @@ const DeveloperPortal = (props) => {
         <div className="DeveloperPortal__header">
           <img className="DeveloperPortal__headerLogo" src={Logo} alt="logo" />
           <div className="DeveloperPortal__headerText">
-            <h1 className="DeveloperPortal__headerTitle">
-              Liberty Developer Resources
-            </h1>
-            <p className="DeveloperPortal__headerCaption">
-              Unified Decentralized Universally Accessible Social Graph
-              Protocol.
-            </p>
-            <h2 className="DeveloperPortal__headerCaption--bold">
-              It’s time to build
-            </h2>
+            <div className="DeveloperPortal__headerTitle">
+              <h1 className="NoSpace" data-aos="fade-right">
+                Liberty Developer Resources
+              </h1>
+            </div>
+            <div className="DeveloperPortal__headerCaption">
+              <p className="NoSpace" data-aos="fade-right">
+                Unified Decentralized Universally Accessible Social Graph
+                Protocol.
+              </p>
+            </div>
+            <div className="DeveloperPortal__headerCaption--bold">
+              <h2 className="NoSpace" data-aos="fade-right">
+                It’s time to build
+              </h2>
+            </div>
           </div>
         </div>
         <div className="DeveloperPortal__getStarted">
@@ -76,8 +86,13 @@ const DeveloperPortal = (props) => {
       </div>
       <div className="DeveloperPortal__quickLinks">
         <div className="DeveloperPortal__quickLinkCard" data-aos="fade-up">
-          <h3>DSNP</h3>
-          <p>
+          <img
+            className="DeveloperPortal__quickLinkCardIcon"
+            src={DSNPIcon}
+            alt="dsnp icon"
+          />
+          <h3 className="DeveloperPortal__quickLinkCardTitle">DSNP</h3>
+          <p className="DeveloperPortal__quickLinkCardDescription">
             The Distributed Social Networking Protocol is the glue that joins
             all the Project Liberty technologies together.
           </p>
@@ -90,24 +105,41 @@ const DeveloperPortal = (props) => {
           </a>
         </div>
         <div className="DeveloperPortal__quickLinkCard" data-aos="fade-up">
-          <h3>Dev Environment</h3>
-          <p>
+          <img
+            className="DeveloperPortal__quickLinkCardIcon"
+            src={DevIcon}
+            alt="dev icon"
+          />
+          <h3 className="DeveloperPortal__quickLinkCardTitle">
+            Dev Environment
+          </h3>
+          <p className="DeveloperPortal__quickLinkCardDescription">
             How to set up a development environment for building DSNP
             applications.
           </p>
           <Link to="/example-client">&#x2192;</Link>
         </div>
         <div className="DeveloperPortal__quickLinkCard" data-aos="fade-up">
-          <h3>Testnet</h3>
-          <p>
+          <img
+            className="DeveloperPortal__quickLinkCardIcon"
+            src={TestnetIcon}
+            alt="testnet icon"
+          />
+          <h3 className="DeveloperPortal__quickLinkCardTitle">Testnet</h3>
+          <p className="DeveloperPortal__quickLinkCardDescription">
             The test network provides a simple "server side" against which you
             can test a DSNP client application.
           </p>
           <Link to="/testnet">&#x2192;</Link>
         </div>
         <div className="DeveloperPortal__quickLinkCard" data-aos="fade-up">
-          <h3>SDK</h3>
-          <p>
+          <img
+            className="DeveloperPortal__quickLinkCardIcon"
+            src={SDKIcon}
+            alt="sdk icon"
+          />
+          <h3 className="DeveloperPortal__quickLinkCardTitle">SDK</h3>
+          <p className="DeveloperPortal__quickLinkCardDescription">
             A software development kit offering build configurations and common
             components for DSNP-enabled applications.
           </p>
@@ -168,6 +200,7 @@ const DeveloperPortal = (props) => {
           </a>
         </div>
       </div>
+      <div className="DeveloperPortal__logoBars--two">{SlashBar}</div>
     </div>
   );
 };

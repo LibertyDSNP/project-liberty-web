@@ -21,13 +21,18 @@ const Sdk = (props) => {
           </p>
           <p>
             Download the SDK or clone it from our{" "}
-            <a href="https://github.com/LibertyDSNP/sdk-ts" target="_blank">
+            <a
+              href="https://github.com/LibertyDSNP/sdk-ts"
+              target="_blank"
+              rel="noreferrer"
+            >
               repository
             </a>{" "}
             and start with{" "}
             <a
               href="https://github.com/LibertyDSNP/sdk-ts/blob/main/docs/README.md"
               target="_blank"
+              rel="noreferrer"
             >
               the documentation
             </a>
@@ -35,11 +40,16 @@ const Sdk = (props) => {
             <a
               href="https://github.com/LibertyDSNP/example-client"
               target="_blank"
+              rel="noreferrer"
             >
               Example Client
             </a>{" "}
             to start digging in to real, running code. As always, check out the{" "}
-            <a href="https://projectliberty.io" target="_blank">
+            <a
+              href="https://projectliberty.io"
+              target="_blank"
+              rel="noreferrer"
+            >
               forums
             </a>{" "}
             for help and to connect with other people building on top of the

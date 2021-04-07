@@ -29,11 +29,19 @@ const ExampleClient = (props) => {
           </p>
           <p>
             Grab the{" "}
-            <a href="https://github.com/LibertyDSNP/sdk-ts" target="_blank">
+            <a
+              href="https://github.com/LibertyDSNP/sdk-ts"
+              target="_blank"
+              rel="noreferrer"
+            >
               SDK
             </a>{" "}
             or the client from our repo and take a look. Hop in our{" "}
-            <a href="https://forum.projectliberty.io" target="_blank">
+            <a
+              href="https://forum.projectliberty.io"
+              target="_blank"
+              rel="noreferrer"
+            >
               forums
             </a>{" "}
             to ask questions. As you read and learn, please help us improve
