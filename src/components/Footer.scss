@@ -70,6 +70,10 @@
 
 .Footer__textLink {
   color: $white;
+
+  &:hover {
+    font-weight: bold;
+  }
 }
 
 .Footer__lastUpdated {

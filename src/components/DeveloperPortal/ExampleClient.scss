@@ -3,7 +3,10 @@
   justify-content: space-around;
 }
 
-.ExampleClient__content {
+.ExampleClient__contentBlock {
   flex: 75;
-  padding: 0 16px;
+}
+
+.ExampleClient__content {
+  @include dev-portal-width;
 }

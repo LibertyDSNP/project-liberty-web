@@ -3,7 +3,10 @@
   justify-content: space-around;
 }
 
-.Blog__content {
+.Blog__contentBlock {
   flex: 75;
-  padding: 0 16px;
+}
+
+.Blog__content {
+  @include dev-portal-width;
 }

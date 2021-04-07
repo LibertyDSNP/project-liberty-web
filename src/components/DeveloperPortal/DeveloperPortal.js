@@ -7,11 +7,21 @@ const DeveloperPortal = (props) => {
     props.onPathChange("developer-portal");
   }, [props]);
 
+  const SlashBar = [];
+  for (let i = 0; i < 25; i++) {
+    let idName = "slash" + i;
+    SlashBar.push(
+      <div className="DeveloperPortal__slash" id={idName}>
+        {" "}
+      </div>
+    );
+  }
+
   return (
     <div className="DeveloperPortal__block Component">
       <div className="DeveloperPortal__blackBackground">
         <div className="DeveloperPortal__header">
-          <img src={Logo} alt="logo" />
+          <img className="DeveloperPortal__headerLogo" src={Logo} alt="logo" />
           <div className="DeveloperPortal__headerText">
             <h1 className="DeveloperPortal__headerTitle">
               Liberty Developer Resources
@@ -64,85 +74,85 @@ const DeveloperPortal = (props) => {
           </p>
         </div>
       </div>
-      <div className="DeveloperPortal__logoBars"> </div>
-      <div className="DeveloperPortal__whiteBackground">
-        <div className="DeveloperPortal__quickLinks">
-          <div className="DeveloperPortal__quickLinkCard">
-            <h3>DSNP</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
-              labore odit veniam! Beatae dolore est incidunt nulla.
-            </p>
-            <a
-              href="http://spec.projectliberty.io/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              &#x2192;
-            </a>
-          </div>
-          <div className="DeveloperPortal__quickLinkCard">
-            <h3>Example Client</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
-              eaque illo minus veniam. Ab adipisci alias beatae doloribus.
-            </p>
-            <Link to="/example-client">&#x2192;</Link>
-          </div>
-          <div className="DeveloperPortal__quickLinkCard">
-            <h3>Testnet</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Architecto atque dolore ea eaque earum, error id illo incidunt.
-            </p>
-            <Link to="/testnet">&#x2192;</Link>
-          </div>
-          <div className="DeveloperPortal__quickLinkCard">
-            <h3>SDK</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
-              asperiores assumenda deleniti doloremque ducimus expedita.
-            </p>
-            <Link to="/sdk">&#x2192;</Link>
-          </div>
+      <div className="DeveloperPortal__quickLinks">
+        <div className="DeveloperPortal__quickLinkCard" data-aos="fade-up">
+          <h3>DSNP</h3>
+          <p>
+            The Distributed Social Networking Protocol is the glue that joins
+            all the Project Liberty technologies together.
+          </p>
+          <a
+            href="http://spec.projectliberty.io/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            &#x2192;
+          </a>
         </div>
-        <div className="DeveloperPortal__rules">
-          <div className="DeveloperPortal__rulesContent">
-            <h2>Contribution Guidelines & Community Standards</h2>
-            <p>
-              Development activity across Project Liberty shares a common set of
-              Contribution Guidelines and a single Code of Conduct. Some
-              repositories will have additional technology-specific developer
-              documentation, but we try to keep the contribution workflow as
-              consistent as possible from repository to repository, so that a
-              participant in one project can easily make contributions elsewhere
-              as desired.
-            </p>
-            <a
-              className="DeveloperPortal__link"
-              href="https://github.com/LibertyDSNP/liberty-web/pull/13"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className="DeveloperPortal__linkTitle">
-                Contribution Guidelines
-              </div>
-              &#x2192;
-            </a>
-            <a
-              className="DeveloperPortal__link"
-              href="https://www.projectliberty.io/codeOfConduct.html"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className="DeveloperPortal__linkTitle">Code of Conduct</div>
-              &#x2192;
-            </a>
-          </div>
+        <div className="DeveloperPortal__quickLinkCard" data-aos="fade-up">
+          <h3>Dev Environment</h3>
+          <p>
+            How to set up a development environment for building DSNP
+            applications.
+          </p>
+          <Link to="/example-client">&#x2192;</Link>
+        </div>
+        <div className="DeveloperPortal__quickLinkCard" data-aos="fade-up">
+          <h3>Testnet</h3>
+          <p>
+            The test network provides a simple "server side" against which you
+            can test a DSNP client application.
+          </p>
+          <Link to="/testnet">&#x2192;</Link>
+        </div>
+        <div className="DeveloperPortal__quickLinkCard" data-aos="fade-up">
+          <h3>SDK</h3>
+          <p>
+            A software development kit offering build configurations and common
+            components for DSNP-enabled applications.
+          </p>
+          <Link to="/sdk">&#x2192;</Link>
         </div>
       </div>
-      <div className="DeveloperPortal__logoBars"> </div>
-      <div className="DeveloperPortal__blackBackground">
+      <div className="DeveloperPortal__rules">
+        <div className="DeveloperPortal__rulesContent">
+          <h2>Contribution Guidelines & Community Standards</h2>
+          <p>
+            Development activity across Project Liberty shares a common set of
+            Contribution Guidelines and a single Code of Conduct. Some
+            repositories will have additional technology-specific developer
+            documentation, but we try to keep the contribution workflow as
+            consistent as possible from repository to repository, so that a
+            participant in one project can easily make contributions elsewhere
+            as desired.
+          </p>
+          <a
+            className="DeveloperPortal__link"
+            href="https://github.com/LibertyDSNP/liberty-web/pull/13"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="DeveloperPortal__linkTitle">
+              Contribution Guidelines
+            </div>
+            &#x2192;
+          </a>
+          <a
+            className="DeveloperPortal__link"
+            href="https://www.projectliberty.io/codeOfConduct.html"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="DeveloperPortal__linkTitle">Code of Conduct</div>
+            &#x2192;
+          </a>
+        </div>
+      </div>
+      <div className="DeveloperPortal__logoBars">{SlashBar}</div>
+      <div
+        className="DeveloperPortal__blackBackground DeveloperPortal__reportingBlock"
+        data-aos="fade-right"
+      >
         <div className="DeveloperPortal__reporting">
           <h2>Reporting Secure Vulnerabilities</h2>
           <p>

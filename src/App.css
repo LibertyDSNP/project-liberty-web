@@ -1,14 +1,19 @@
 body {
   margin: 0;
   height: 100%;
+  background-color: #f0f0f0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .Content {
+  background-color: #fff;
   min-height: 100vh;
+  max-width: 1800px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  box-shadow: 30px 0 40px -2px #c7c5c5, -30px 0 40px -2px #c7c5c5;
 }
 
 .Component {
@@ -230,6 +235,9 @@ a:hover {
 
 .Footer__textLink {
   color: #fff;
+}
+.Footer__textLink:hover {
+  font-weight: bold;
 }
 
 .Footer__lastUpdated {
@@ -581,10 +589,20 @@ a:hover {
   }
 }
 
+.DeveloperPortal__headerLogo {
+  height: 100%;
+}
+@media (max-width: 971px) {
+  .DeveloperPortal__headerLogo {
+    width: 35px;
+  }
+}
+
 .DeveloperPortal__headerText {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 .DeveloperPortal__headerText > * {
@@ -594,6 +612,11 @@ a:hover {
 
 .DeveloperPortal__headerTitle {
   padding-left: 0;
+}
+@media (max-width: 971px) {
+  .DeveloperPortal__headerTitle {
+    flex: 100vw;
+  }
 }
 
 .DeveloperPortal__headerCaption {
@@ -608,6 +631,8 @@ a:hover {
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
+  padding: 50px 0 275px 0;
+  background-color: #000;
 }
 @media (max-width: 991px) {
   .DeveloperPortal__getStarted {
@@ -627,6 +652,8 @@ a:hover {
   display: flex;
   justify-content: space-between;
   text-align: center;
+  flex-wrap: wrap;
+  margin-top: -225px;
 }
 @media (max-width: 991px) {
   .DeveloperPortal__quickLinks {
@@ -638,16 +665,42 @@ a:hover {
     max-width: 90vw;
   }
 }
+@media (max-width: 991px) {
+  .DeveloperPortal__quickLinks {
+    max-width: 90vw;
+  }
+}
+@media (max-width: 700px) {
+  .DeveloperPortal__quickLinks {
+    max-width: 96vw;
+  }
+}
 
 .DeveloperPortal__quickLinkCard {
   background-color: #fff;
-  margin: -100px 20px 0 0;
+  margin: 12px 0;
   padding: 16px;
   display: flex;
   flex-direction: column;
-  flex: 25;
+  flex-basis: 20%;
+  min-width: 200px;
   align-items: center;
   box-shadow: 0 6px 6px #d4d4d4;
+}
+@media (max-width: 991px) {
+  .DeveloperPortal__quickLinkCard {
+    flex-basis: 45%;
+    padding: 10px;
+    max-width: 45vw;
+    min-width: 0;
+  }
+}
+@media (max-width: 416px) {
+  .DeveloperPortal__quickLinkCard {
+    margin: 12px auto;
+    max-width: 55vw;
+    min-width: 45vw;
+  }
 }
 .DeveloperPortal__quickLinkCard p {
   height: 200px;
@@ -680,7 +733,6 @@ a:hover {
   max-width: 960px;
   width: 100%;
   margin: 0 auto;
-  margin-top: 64px;
   box-shadow: 0 6px 6px #d4d4d4;
 }
 @media (max-width: 991px) {
@@ -693,9 +745,19 @@ a:hover {
     max-width: 90vw;
   }
 }
+@media (max-width: 991px) {
+  .DeveloperPortal__rules {
+    max-width: 90vw;
+  }
+}
+@media (max-width: 700px) {
+  .DeveloperPortal__rules {
+    max-width: 96vw;
+  }
+}
 
 .DeveloperPortal__rulesContent {
-  padding: 16px;
+  padding: 50px;
 }
 
 .DeveloperPortal__link {
@@ -735,6 +797,11 @@ a:hover {
   margin-right: 10px;
 }
 
+.DeveloperPortal__reportingBlock {
+  position: relative;
+  z-index: 1;
+}
+
 .DeveloperPortal__reporting {
   max-width: 960px;
   width: 100%;
@@ -742,6 +809,7 @@ a:hover {
   position: relative;
   z-index: 1;
   color: #fff;
+  padding: 50px 0;
 }
 @media (max-width: 991px) {
   .DeveloperPortal__reporting {
@@ -755,17 +823,40 @@ a:hover {
 }
 
 .DeveloperPortal__logoBars {
-  background-image: url("../../images/LogoBars.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  min-width: 2200px;
+  position: relative;
+  margin: 50px 0 -50px 0;
+}
+
+.DeveloperPortal__slash {
+  width: 50px;
   height: 250px;
+  background: #26e990;
+  position: relative;
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  transform: skew(-20deg);
+  z-index: 0;
+}
+
+#slash1,
+#slash6,
+#slash10,
+#slash11,
+#slash15,
+#slash18,
+#slash23,
+#slash24 {
+  z-index: 2;
 }
 
 .DeveloperPortal__blackBackground {
   background-color: #000;
   color: #fff;
-  padding: 32px 0;
+  padding: 0;
 }
 
 .DeveloperPortal__whiteBackground {
@@ -871,9 +962,14 @@ a:hover {
   justify-content: space-around;
 }
 
-.Testnet__content {
+.Testnet__contentBlock {
   flex: 75;
-  padding: 0 16px;
+}
+
+.Testnet__content {
+  max-width: 1100px;
+  padding: 0 32px;
+  margin: 0 auto;
 }
 
 .SDK__layout {
@@ -881,9 +977,14 @@ a:hover {
   justify-content: space-around;
 }
 
-.SDK__content {
+.SDK__contentBlock {
   flex: 75;
-  padding: 0 16px;
+}
+
+.SDK__content {
+  max-width: 1100px;
+  padding: 0 32px;
+  margin: 0 auto;
 }
 
 .ExampleClient__layout {
@@ -891,9 +992,14 @@ a:hover {
   justify-content: space-around;
 }
 
-.ExampleClient__content {
+.ExampleClient__contentBlock {
   flex: 75;
-  padding: 0 16px;
+}
+
+.ExampleClient__content {
+  max-width: 1100px;
+  padding: 0 32px;
+  margin: 0 auto;
 }
 
 .Blog__layout {
@@ -901,9 +1007,14 @@ a:hover {
   justify-content: space-around;
 }
 
-.Blog__content {
+.Blog__contentBlock {
   flex: 75;
-  padding: 0 16px;
+}
+
+.Blog__content {
+  max-width: 1100px;
+  padding: 0 32px;
+  margin: 0 auto;
 }
 
 .LetsConnect__block {

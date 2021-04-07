@@ -21,7 +21,7 @@ const App = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1000,
     });
   }, [pathname]);
 

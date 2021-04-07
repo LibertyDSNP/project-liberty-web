@@ -3,7 +3,10 @@
   justify-content: space-around;
 }
 
-.Testnet__content {
+.Testnet__contentBlock {
   flex: 75;
-  padding: 0 16px;
+}
+
+.Testnet__content {
+  @include dev-portal-width;
 }

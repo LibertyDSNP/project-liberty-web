@@ -3,7 +3,10 @@
   justify-content: space-around;
 }
 
-.SDK__content {
+.SDK__contentBlock {
   flex: 75;
-  padding: 0 16px;
+}
+
+.SDK__content {
+ @include dev-portal-width;
 }

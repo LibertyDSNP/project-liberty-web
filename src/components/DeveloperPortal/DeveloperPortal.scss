@@ -8,10 +8,19 @@
   padding-top: 24px;
 }
 
+.DeveloperPortal__headerLogo {
+  height: 100%;
+
+  @media (max-width: 971px) {
+    width: 35px;
+  }
+}
+
 .DeveloperPortal__headerText {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 .DeveloperPortal__headerText > * {
@@ -21,6 +30,10 @@
 
 .DeveloperPortal__headerTitle {
   padding-left: 0;
+
+  @media (max-width: 971px) {
+    flex: 100vw;
+  }
 }
 
 .DeveloperPortal__headerCaption {
@@ -33,6 +46,8 @@
 
 .DeveloperPortal__getStarted {
   @include body-width;
+  padding: 50px 0 275px 0;
+  background-color: $black;
 }
 
 .DeveloperPortal__quickLinks {
@@ -40,17 +55,41 @@
   display: flex;
   justify-content: space-between;
   text-align: center;
+  flex-wrap: wrap;
+  margin-top: -225px;
+
+  @media (max-width: 991px) {
+    max-width: 90vw;
+  }
+
+  @media (max-width: 700px) {
+    max-width: 96vw;
+  }
 }
 
 .DeveloperPortal__quickLinkCard {
   background-color: $white;
-  margin: -100px 20px 0 0;
+  margin: 12px 0;
   padding: 16px;
   display: flex;
   flex-direction: column;
-  flex: 25;
+  flex-basis: 20%;
+  min-width: 200px;
   align-items: center;
   box-shadow: 0 6px 6px $gray;
+
+  @media (max-width: 991px) {
+    flex-basis: 45%;
+    padding: 10px;
+    max-width: 45vw;
+    min-width: 0;
+  }
+
+  @media (max-width: 416px) {
+    margin: 12px auto;
+    max-width: 55vw;
+    min-width: 45vw;
+  }
 
   p {
     height: 200px;
@@ -84,12 +123,19 @@
 
 .DeveloperPortal__rules {
   @include body-width;
-  margin-top: 64px;
   box-shadow: 0 6px 6px $gray;
+
+  @media (max-width: 991px) {
+    max-width: 90vw;
+  }
+
+  @media (max-width: 700px) {
+    max-width: 96vw;
+  }
 }
 
 .DeveloperPortal__rulesContent {
-  padding: 16px;
+  padding: 50px;
 }
 
 .DeveloperPortal__link {
@@ -127,25 +173,54 @@
   margin-right: 10px;
 }
 
+.DeveloperPortal__reportingBlock {
+  position: relative;
+  z-index: 1;
+}
+
 .DeveloperPortal__reporting {
   @include body-width;
   position: relative;
   z-index: 1;
   color: $white;
+  padding: 50px 0;
 }
 
 .DeveloperPortal__logoBars {
-  background-image: url("../../images/LogoBars.png");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  min-width: 2200px;
+  position: relative;
+  margin: 50px 0 -50px 0;
+}
+
+.DeveloperPortal__slash {
+  width: 50px;
   height: 250px;
+  background: $green;
+  position: relative;
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  transform: skew(-20deg);
+  z-index: 0;
+}
+
+#slash1,
+#slash6,
+#slash10,
+#slash11,
+#slash15,
+#slash18,
+#slash23,
+#slash24 {
+  z-index: 2;
 }
 
 .DeveloperPortal__blackBackground {
   background-color: $black;
   color: $white;
-  padding: 32px 0;
+  padding: 0;
 }
 
 .DeveloperPortal__whiteBackground {
