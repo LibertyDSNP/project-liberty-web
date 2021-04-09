@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import DeveloperPortalNav from "./DeveloperPortal/DeveloperPortalNav";
 
 const Navigation = () => {
   const initiallyShowMenu = window.innerWidth > 970 ? true : false;
@@ -8,6 +7,13 @@ const Navigation = () => {
   const [navIconClassName, setNavIconClassName] = React.useState(
     "Navigation__burger"
   );
+  const [isDesktop, setIsDesktop] = React.useState(initiallyShowMenu);
+
+  // const element = document.getElementsByClassName("DeveloperPortalNav__topNav");
+  // console.log(element);
+
+  // .Navigation__dropdownBlock:focus-within .DeveloperPortalNav__topNav,
+  // .Navigation__dropdownBlock:hover .DeveloperPortalNav__topNav")
 
   useEffect(() => {
     if (showNav) {
@@ -17,8 +23,10 @@ const Navigation = () => {
     }
     window.addEventListener("resize", () => {
       if (window.innerWidth > 970) {
+        setIsDesktop(true);
         setShowNav(true);
       } else {
+        setIsDesktop(false);
         setShowNav(false);
       }
     });
@@ -27,6 +35,7 @@ const Navigation = () => {
   const hideDropdownNav = () => {
     if (window.innerWidth < 971) {
       setShowNav(false);
+      setIsDesktop(false);
     }
   };
 
@@ -53,14 +62,18 @@ const Navigation = () => {
           </Link>
           <span className="Navigation__divider"> / </span>
           <div className="Navigation__dropdownBlock">
-            <Link
-              to="/developer-portal"
-              className="Navigation__link Navigation__dropdownBtn"
-              onClick={() => hideDropdownNav()}
-            >
-              Developer Portal
-            </Link>
-            <DeveloperPortalNav blockClassName="DeveloperPortalNav__topNav" />
+            <div className="Navigation__dropdownBlockTop">
+              <Link
+                to="/developer-portal"
+                className="Navigation__link Navigation__dropdownBtn"
+                onClick={() => hideDropdownNav()}
+              >
+                Developer Portal
+              </Link>
+              {isDesktop && (
+                <div className="Navigation__dropdownBtnIcon">&#10094;</div>
+              )}
+            </div>
           </div>
           <span className="Navigation__divider"> / </span>
           <Link

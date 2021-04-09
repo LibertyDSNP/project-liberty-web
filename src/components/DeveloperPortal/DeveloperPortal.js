@@ -35,7 +35,7 @@ const DeveloperPortal = (props) => {
             <div className="DeveloperPortal__headerCaption">
               <p className="NoSpace" data-aos="fade-right">
                 Unified Decentralized Universally Accessible Social Graph
-                Protocol.
+                Protocol
               </p>
             </div>
             <div className="DeveloperPortal__headerCaption--bold">
