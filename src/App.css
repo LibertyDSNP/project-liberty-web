@@ -292,10 +292,6 @@ a:hover {
   }
 }
 
-.Navigation__dropdownBlockTop {
-  display: flex;
-}
-
 .Navigation__dropdownBtnIcon {
   transform: rotate(-90deg);
   padding: 0 6px;
@@ -936,9 +932,6 @@ a:hover {
   position: relative;
 }
 
-.DeveloperPortalNav__topNav {
-  background-color: #26e990;
-}
 @media (min-width: 971px) {
   .DeveloperPortalNav__topNav {
     box-shadow: 0 5px 4px -4px #d4d4d4;

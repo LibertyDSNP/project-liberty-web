@@ -7,13 +7,6 @@ const Navigation = () => {
   const [navIconClassName, setNavIconClassName] = React.useState(
     "Navigation__burger"
   );
-  const [isDesktop, setIsDesktop] = React.useState(initiallyShowMenu);
-
-  // const element = document.getElementsByClassName("DeveloperPortalNav__topNav");
-  // console.log(element);
-
-  // .Navigation__dropdownBlock:focus-within .DeveloperPortalNav__topNav,
-  // .Navigation__dropdownBlock:hover .DeveloperPortalNav__topNav")
 
   useEffect(() => {
     if (showNav) {
@@ -23,10 +16,8 @@ const Navigation = () => {
     }
     window.addEventListener("resize", () => {
       if (window.innerWidth > 970) {
-        setIsDesktop(true);
         setShowNav(true);
       } else {
-        setIsDesktop(false);
         setShowNav(false);
       }
     });
@@ -35,7 +26,6 @@ const Navigation = () => {
   const hideDropdownNav = () => {
     if (window.innerWidth < 971) {
       setShowNav(false);
-      setIsDesktop(false);
     }
   };
 
@@ -62,18 +52,13 @@ const Navigation = () => {
           </Link>
           <span className="Navigation__divider"> / </span>
           <div className="Navigation__dropdownBlock">
-            <div className="Navigation__dropdownBlockTop">
-              <Link
-                to="/developer-portal"
-                className="Navigation__link Navigation__dropdownBtn"
-                onClick={() => hideDropdownNav()}
-              >
-                Developer Portal
-              </Link>
-              {isDesktop && (
-                <div className="Navigation__dropdownBtnIcon">&#10094;</div>
-              )}
-            </div>
+            <Link
+              to="/developer-portal"
+              className="Navigation__link Navigation__dropdownBtn"
+              onClick={() => hideDropdownNav()}
+            >
+              Developer Portal
+            </Link>
           </div>
           <span className="Navigation__divider"> / </span>
           <Link
