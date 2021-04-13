@@ -1,14 +1,32 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import DeveloperPortalNav from "./DeveloperPortalNav";
+import DeveloperPortalMobileNav from "./DeveloperPortalMobileNav";
 
 const Sdk = (props) => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 750);
+
   useEffect(() => {
     props.onPathChange("sdk");
   }, [props]);
 
+  useEffect(() => {
+    const resizeListener = () => {
+      setIsMobile(window.innerWidth < 750);
+    };
+    window.addEventListener("resize", resizeListener);
+  }, []);
+
   return (
-    <div className="SDK__layout Component">
-      <DeveloperPortalNav blockClassName="DeveloperPortalNav__sideNav" />
+    <div
+      className={
+        isMobile ? "SDK__layout Column Component" : "SDK__layout Component"
+      }
+    >
+      {isMobile ? (
+        <DeveloperPortalMobileNav />
+      ) : (
+        <DeveloperPortalNav blockClassName="DeveloperPortalNav__sideNav" />
+      )}
       <div className="SDK__contentBlock">
         <div className="SDK__content">
           <h1>SDK</h1>

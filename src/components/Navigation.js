@@ -1,9 +1,11 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import DeveloperPortalNav from "./DeveloperPortal/DeveloperPortalNav";
 
 const Navigation = () => {
   const initiallyShowMenu = window.innerWidth > 970 ? true : false;
   const [showNav, setShowNav] = React.useState(initiallyShowMenu);
+  const [isMobile, setIsMobile] = React.useState(!initiallyShowMenu);
   const [navIconClassName, setNavIconClassName] = React.useState(
     "Navigation__burger"
   );
@@ -17,8 +19,10 @@ const Navigation = () => {
     window.addEventListener("resize", () => {
       if (window.innerWidth > 970) {
         setShowNav(true);
+        setIsMobile(false);
       } else {
         setShowNav(false);
+        setIsMobile(true);
       }
     });
   }, [showNav]);
@@ -26,6 +30,7 @@ const Navigation = () => {
   const hideDropdownNav = () => {
     if (window.innerWidth < 971) {
       setShowNav(false);
+      setIsMobile(true);
     }
   };
 
@@ -59,6 +64,9 @@ const Navigation = () => {
             >
               Developer Portal
             </Link>
+            {!isMobile && (
+              <DeveloperPortalNav blockClassName="DeveloperPortalNav__topNav" />
+            )}
           </div>
           <span className="Navigation__divider"> / </span>
           <Link

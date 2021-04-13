@@ -5,6 +5,10 @@
 
 .SDK__contentBlock {
   flex: 75;
+
+  @media (max-width: 749px) {
+    margin-top: 175px;
+  }
 }
 
 .SDK__content {

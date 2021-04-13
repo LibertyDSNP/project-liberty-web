@@ -5,6 +5,10 @@
 
 .ExampleClient__contentBlock {
   flex: 75;
+
+  @media (max-width: 749px) {
+    margin-top: 175px;
+  }
 }
 
 .ExampleClient__content {

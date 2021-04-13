@@ -24,6 +24,11 @@ body {
   flex-grow: 1;
 }
 
+.Column {
+  display: flex;
+  flex-direction: column;
+}
+
 .Header__block,
 .Component,
 .Footer__block {

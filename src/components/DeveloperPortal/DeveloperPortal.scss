@@ -2,6 +2,7 @@
   width: 100%;
   overflow-x: hidden;
   margin-bottom: -165px;
+  position: relative;
 }
 
 .DeveloperPortal__header {
@@ -52,6 +53,16 @@
   background-color: $black;
 }
 
+.DeveloperPortal__parallaxIcon {
+  background-image: url("../../images/no-background-brand-icon.png");
+  height: 358px;
+  background-attachment: fixed;
+  background-position: left 85% top 0, right 15% top 0;
+  background-repeat: no-repeat;
+  margin-top: -300px;
+  position: relative;
+}
+
 .DeveloperPortal__quickLinks {
   @include body-width;
   display: flex;
@@ -79,6 +90,15 @@
   min-width: 200px;
   align-items: center;
   box-shadow: 0 6px 6px $gray;
+  color: $black;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $black;
+    text-decoration: none;
+    box-shadow: 6px 10px 12px $gray, -6px 6px 6px $gray;
+  }
 
   @media (max-width: 991px) {
     flex-basis: 42%;
@@ -92,24 +112,25 @@
     max-width: 55vw;
     min-width: 40vw;
   }
+}
 
-  a {
-    position: relative;
-    height: 30px;
-    width: 30px;
-    background-color: $black;
-    border-radius: 50%;
-    font-weight: normal;
-    transition: font-weight 0.4s;
-    flex-grow: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.DeveloperPortal__quickLink {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  background-color: $black;
+  border-radius: 50%;
+  font-weight: normal;
+  transition: font-weight 0.4s, font-size 0.2s;
+  flex-grow: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $green;
 
-  a:hover {
-    text-decoration: none;
+  &:hover {
     font-weight: bold;
+    font-size: 20px;
   }
 }
 
@@ -193,6 +214,12 @@
 .DeveloperPortal__linkTitle--white {
   color: $white;
   margin-right: 10px;
+
+  &:hover {
+    color: $white;
+    text-decoration: none;
+    font-weight: 700;
+  }
 }
 
 .DeveloperPortal__reportingBlock {
@@ -244,6 +271,7 @@
 .DeveloperPortal__logoBars--two {
   display: flex;
   justify-content: space-between;
+  height: 200px;
   min-width: 2200px;
   position: relative;
   margin: -60px 0;

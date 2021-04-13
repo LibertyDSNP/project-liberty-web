@@ -1,14 +1,34 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import DeveloperPortalNav from "./DeveloperPortalNav";
+import DeveloperPortalMobileNav from "./DeveloperPortalMobileNav";
 
 const Testnet = (props) => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 750);
+
   useEffect(() => {
     props.onPathChange("testnet");
   }, [props]);
 
+  useEffect(() => {
+    const resizeListener = () => {
+      setIsMobile(window.innerWidth < 750);
+    };
+    window.addEventListener("resize", resizeListener);
+  }, []);
+
   return (
-    <div className="Testnet__layout Component">
-      <DeveloperPortalNav blockClassName="DeveloperPortalNav__sideNav" />
+    <div
+      className={
+        isMobile
+          ? "Testnet__layout Column Component"
+          : "Testnet__layout Component"
+      }
+    >
+      {isMobile ? (
+        <DeveloperPortalMobileNav />
+      ) : (
+        <DeveloperPortalNav blockClassName="DeveloperPortalNav__sideNav" />
+      )}
       <div className="Testnet__contentBlock">
         <div className="Testnet__content">
           <h1>Testnet</h1>

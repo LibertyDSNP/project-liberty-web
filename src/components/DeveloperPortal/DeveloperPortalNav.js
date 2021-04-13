@@ -53,9 +53,6 @@ const DeveloperPortalNav = (blockClassName) => {
         >
           Forum
         </a>
-        <Link to="/blog" className="DeveloperPortalNav__dropdownLink">
-          Blog
-        </Link>
       </div>
     </div>
   );

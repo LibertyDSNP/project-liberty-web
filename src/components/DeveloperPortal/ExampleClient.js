@@ -1,14 +1,34 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import DeveloperPortalNav from "./DeveloperPortalNav";
+import DeveloperPortalMobileNav from "./DeveloperPortalMobileNav";
 
 const ExampleClient = (props) => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 750);
+
   useEffect(() => {
     props.onPathChange("example-client");
   }, [props]);
 
+  useEffect(() => {
+    const resizeListener = () => {
+      setIsMobile(window.innerWidth < 750);
+    };
+    window.addEventListener("resize", resizeListener);
+  }, []);
+
   return (
-    <div className="ExampleClient__layout Component">
-      <DeveloperPortalNav blockClassName="DeveloperPortalNav__sideNav" />
+    <div
+      className={
+        isMobile
+          ? "ExampleClient__layout Column Component"
+          : "ExampleClient__layout Component"
+      }
+    >
+      {isMobile ? (
+        <DeveloperPortalMobileNav />
+      ) : (
+        <DeveloperPortalNav blockClassName="DeveloperPortalNav__sideNav" />
+      )}
       <div className="ExampleClient__contentBlock">
         <div className="ExampleClient__content">
           <h1>Example Client</h1>

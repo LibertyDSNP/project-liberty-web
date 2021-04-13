@@ -5,6 +5,10 @@
 
 .Testnet__contentBlock {
   flex: 75;
+
+  @media (max-width: 749px) {
+    margin-top: 175px;
+  }
 }
 
 .Testnet__content {

@@ -84,8 +84,15 @@ const DeveloperPortal = (props) => {
           </p>
         </div>
       </div>
+      <div className="DeveloperPortal__parallaxIcon"></div>
       <div className="DeveloperPortal__quickLinks">
-        <div className="DeveloperPortal__quickLinkCard" data-aos="fade-up">
+        <a
+          href="http://spec.projectliberty.io/"
+          target="_blank"
+          rel="noreferrer"
+          className="DeveloperPortal__quickLinkCard"
+          data-aos="fade-up"
+        >
           <img
             className="DeveloperPortal__quickLinkCardIcon"
             src={DSNPIcon}
@@ -96,15 +103,13 @@ const DeveloperPortal = (props) => {
             The Distributed Social Networking Protocol is the glue that joins
             all the Project Liberty technologies together.
           </p>
-          <a
-            href="http://spec.projectliberty.io/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            &#x2192;
-          </a>
-        </div>
-        <div className="DeveloperPortal__quickLinkCard" data-aos="fade-up">
+          <div className="DeveloperPortal__quickLink">&#x2192;</div>
+        </a>
+        <Link
+          to="/example-client"
+          className="DeveloperPortal__quickLinkCard"
+          data-aos="fade-up"
+        >
           <img
             className="DeveloperPortal__quickLinkCardIcon"
             src={DevIcon}
@@ -117,9 +122,13 @@ const DeveloperPortal = (props) => {
             How to set up a development environment for building DSNP
             applications.
           </p>
-          <Link to="/example-client">&#x2192;</Link>
-        </div>
-        <div className="DeveloperPortal__quickLinkCard" data-aos="fade-up">
+          <div className="DeveloperPortal__quickLink">&#x2192;</div>
+        </Link>
+        <Link
+          to="/testnet"
+          className="DeveloperPortal__quickLinkCard"
+          data-aos="fade-up"
+        >
           <img
             className="DeveloperPortal__quickLinkCardIcon"
             src={TestnetIcon}
@@ -130,9 +139,13 @@ const DeveloperPortal = (props) => {
             The test network provides a simple "server side" against which you
             can test a DSNP client application.
           </p>
-          <Link to="/testnet">&#x2192;</Link>
-        </div>
-        <div className="DeveloperPortal__quickLinkCard" data-aos="fade-up">
+          <div className="DeveloperPortal__quickLink">&#x2192;</div>
+        </Link>
+        <Link
+          to="/sdk"
+          className="DeveloperPortal__quickLinkCard"
+          data-aos="fade-up"
+        >
           <img
             className="DeveloperPortal__quickLinkCardIcon"
             src={SDKIcon}
@@ -143,8 +156,8 @@ const DeveloperPortal = (props) => {
             A software development kit offering build configurations and common
             components for DSNP-enabled applications.
           </p>
-          <Link to="/sdk">&#x2192;</Link>
-        </div>
+          <div className="DeveloperPortal__quickLink">&#x2192;</div>
+        </Link>
       </div>
       <div className="DeveloperPortal__rules">
         <div className="DeveloperPortal__rulesContent">
@@ -193,9 +206,12 @@ const DeveloperPortal = (props) => {
             posted publicly, please report it (and thank you!).
           </p>
           <a className="DeveloperPortal__link" href="#">
-            <div className="DeveloperPortal__linkTitle--white">
+            <a
+              className="DeveloperPortal__linkTitle--white"
+              href="mailto:security@projectliberty.io"
+            >
               Report Vulnerability
-            </div>
+            </a>
             &#x2192;
           </a>
         </div>
