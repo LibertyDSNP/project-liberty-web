@@ -11,7 +11,6 @@ import DeveloperPortal from "./components/DeveloperPortal/DeveloperPortal";
 import Testnet from "./components/DeveloperPortal/Testnet";
 import Sdk from "./components/DeveloperPortal/SDK";
 import ExampleClient from "./components/DeveloperPortal/ExampleClient";
-import Blog from "./components/DeveloperPortal/Blog";
 import LetsConnect from "./components/LetsConnect";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import CodeOfConduct from "./components/CodeOfConduct";
@@ -21,7 +20,7 @@ const App = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1200,
     });
   }, [pathname]);
 
@@ -48,9 +47,6 @@ const App = () => {
             </Route>
             <Route path="/example-client">
               <ExampleClient onPathChange={setPathname} />
-            </Route>
-            <Route path="/blog">
-              <Blog onPathChange={setPathname} />
             </Route>
             <Route path="/lets-connect">
               <LetsConnect onPathChange={setPathname} />

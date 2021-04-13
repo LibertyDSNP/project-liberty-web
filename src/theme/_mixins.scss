@@ -11,3 +11,15 @@
     max-width: 90vw;
   }
 }
+
+@mixin dev-portal-width {
+  margin: 0 100px;
+
+  @media (max-width: 934px) {
+    margin: 0 50px;
+  }
+
+  @media (max-width: 767px) {
+    margin: 0 30px;
+  }
+}

@@ -16,11 +16,11 @@ const LetsConnect = (props) => {
         <p className="LetsConnect__caption">
           <a
             className="LetsConnect__link"
-            href="https://forum.projectliberty.io/"
+            href="https://forums.projectliberty.io/"
             target="_blank"
             rel="noreferrer"
           >
-            https://forum.projectliberty.io/
+            https://forums.projectliberty.io/
           </a>
         </p>
         <p className="LetsConnect__caption">or join our mailing list</p>

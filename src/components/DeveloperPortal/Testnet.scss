@@ -3,7 +3,14 @@
   justify-content: space-around;
 }
 
-.Testnet__content {
+.Testnet__contentBlock {
   flex: 75;
-  padding: 0 16px;
+
+  @media (max-width: 749px) {
+    margin-top: 175px;
+  }
+}
+
+.Testnet__content {
+  @include dev-portal-width;
 }

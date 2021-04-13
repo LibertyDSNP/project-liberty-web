@@ -1,28 +1,48 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../images/brand-icon.png";
+import DevIcon from "../../images/icons/Dev_Icon.png";
+import DSNPIcon from "../../images/icons/DSNP_Icon.png";
+import SDKIcon from "../../images/icons/SDK_Icon.png";
+import TestnetIcon from "../../images/icons/Testnet_Icon.png";
 
 const DeveloperPortal = (props) => {
   useEffect(() => {
     props.onPathChange("developer-portal");
   }, [props]);
 
+  const SlashBar = [];
+  for (let i = 0; i < 25; i++) {
+    let idName = "slash" + i;
+    SlashBar.push(
+      <div className="DeveloperPortal__slash" id={idName} key={idName}>
+        {" "}
+      </div>
+    );
+  }
+
   return (
     <div className="DeveloperPortal__block Component">
       <div className="DeveloperPortal__blackBackground">
         <div className="DeveloperPortal__header">
-          <img src={Logo} alt="logo" />
+          <img className="DeveloperPortal__headerLogo" src={Logo} alt="logo" />
           <div className="DeveloperPortal__headerText">
-            <h1 className="DeveloperPortal__headerTitle">
-              Liberty Developer Resources
-            </h1>
-            <p className="DeveloperPortal__headerCaption">
-              Unified Decentralized Universally Accessible Social Graph
-              Protocol.
-            </p>
-            <h2 className="DeveloperPortal__headerCaption--bold">
-              It’s time to build
-            </h2>
+            <div className="DeveloperPortal__headerTitle">
+              <h1 className="NoSpace" data-aos="fade-right">
+                Liberty Developer Resources
+              </h1>
+            </div>
+            <div className="DeveloperPortal__headerCaption">
+              <p className="NoSpace" data-aos="fade-right">
+                Unified Decentralized Universally Accessible Social Graph
+                Protocol
+              </p>
+            </div>
+            <div className="DeveloperPortal__headerCaption--bold">
+              <h2 className="NoSpace" data-aos="fade-right">
+                It’s time to build
+              </h2>
+            </div>
           </div>
         </div>
         <div className="DeveloperPortal__getStarted">
@@ -64,85 +84,120 @@ const DeveloperPortal = (props) => {
           </p>
         </div>
       </div>
-      <div className="DeveloperPortal__logoBars"> </div>
-      <div className="DeveloperPortal__whiteBackground">
-        <div className="DeveloperPortal__quickLinks">
-          <div className="DeveloperPortal__quickLinkCard">
-            <h3>DSNP</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore
-              labore odit veniam! Beatae dolore est incidunt nulla.
-            </p>
-            <a
-              href="http://spec.projectliberty.io/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              &#x2192;
-            </a>
-          </div>
-          <div className="DeveloperPortal__quickLinkCard">
-            <h3>Example Client</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum
-              eaque illo minus veniam. Ab adipisci alias beatae doloribus.
-            </p>
-            <Link to="/example-client">&#x2192;</Link>
-          </div>
-          <div className="DeveloperPortal__quickLinkCard">
-            <h3>Testnet</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Architecto atque dolore ea eaque earum, error id illo incidunt.
-            </p>
-            <Link to="/testnet">&#x2192;</Link>
-          </div>
-          <div className="DeveloperPortal__quickLinkCard">
-            <h3>SDK</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
-              asperiores assumenda deleniti doloremque ducimus expedita.
-            </p>
-            <Link to="/sdk">&#x2192;</Link>
-          </div>
-        </div>
-        <div className="DeveloperPortal__rules">
-          <div className="DeveloperPortal__rulesContent">
-            <h2>Contribution Guidelines & Community Standards</h2>
-            <p>
-              Development activity across Project Liberty shares a common set of
-              Contribution Guidelines and a single Code of Conduct. Some
-              repositories will have additional technology-specific developer
-              documentation, but we try to keep the contribution workflow as
-              consistent as possible from repository to repository, so that a
-              participant in one project can easily make contributions elsewhere
-              as desired.
-            </p>
-            <a
-              className="DeveloperPortal__link"
-              href="https://github.com/LibertyDSNP/liberty-web/pull/13"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className="DeveloperPortal__linkTitle">
-                Contribution Guidelines
-              </div>
-              &#x2192;
-            </a>
-            <a
-              className="DeveloperPortal__link"
-              href="https://www.projectliberty.io/codeOfConduct.html"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div className="DeveloperPortal__linkTitle">Code of Conduct</div>
-              &#x2192;
-            </a>
-          </div>
+      <div className="DeveloperPortal__parallaxIcon"></div>
+      <div className="DeveloperPortal__quickLinks">
+        <a
+          href="http://spec.projectliberty.io/"
+          target="_blank"
+          rel="noreferrer"
+          className="DeveloperPortal__quickLinkCard"
+          data-aos="fade-up"
+        >
+          <img
+            className="DeveloperPortal__quickLinkCardIcon"
+            src={DSNPIcon}
+            alt="dsnp icon"
+          />
+          <h3 className="DeveloperPortal__quickLinkCardTitle">DSNP</h3>
+          <p className="DeveloperPortal__quickLinkCardDescription">
+            The Distributed Social Networking Protocol is the glue that joins
+            all the Project Liberty technologies together.
+          </p>
+          <div className="DeveloperPortal__quickLink">&#x2192;</div>
+        </a>
+        <Link
+          to="/example-client"
+          className="DeveloperPortal__quickLinkCard"
+          data-aos="fade-up"
+        >
+          <img
+            className="DeveloperPortal__quickLinkCardIcon"
+            src={DevIcon}
+            alt="dev icon"
+          />
+          <h3 className="DeveloperPortal__quickLinkCardTitle">
+            Dev Environment
+          </h3>
+          <p className="DeveloperPortal__quickLinkCardDescription">
+            How to set up a development environment for building DSNP
+            applications.
+          </p>
+          <div className="DeveloperPortal__quickLink">&#x2192;</div>
+        </Link>
+        <Link
+          to="/testnet"
+          className="DeveloperPortal__quickLinkCard"
+          data-aos="fade-up"
+        >
+          <img
+            className="DeveloperPortal__quickLinkCardIcon"
+            src={TestnetIcon}
+            alt="testnet icon"
+          />
+          <h3 className="DeveloperPortal__quickLinkCardTitle">Testnet</h3>
+          <p className="DeveloperPortal__quickLinkCardDescription">
+            The test network provides a simple "server side" against which you
+            can test a DSNP client application.
+          </p>
+          <div className="DeveloperPortal__quickLink">&#x2192;</div>
+        </Link>
+        <Link
+          to="/sdk"
+          className="DeveloperPortal__quickLinkCard"
+          data-aos="fade-up"
+        >
+          <img
+            className="DeveloperPortal__quickLinkCardIcon"
+            src={SDKIcon}
+            alt="sdk icon"
+          />
+          <h3 className="DeveloperPortal__quickLinkCardTitle">SDK</h3>
+          <p className="DeveloperPortal__quickLinkCardDescription">
+            A software development kit offering build configurations and common
+            components for DSNP-enabled applications.
+          </p>
+          <div className="DeveloperPortal__quickLink">&#x2192;</div>
+        </Link>
+      </div>
+      <div className="DeveloperPortal__rules">
+        <div className="DeveloperPortal__rulesContent">
+          <h2>Contribution Guidelines & Community Standards</h2>
+          <p>
+            Development activity across Project Liberty shares a common set of
+            Contribution Guidelines and a single Code of Conduct. Some
+            repositories will have additional technology-specific developer
+            documentation, but we try to keep the contribution workflow as
+            consistent as possible from repository to repository, so that a
+            participant in one project can easily make contributions elsewhere
+            as desired.
+          </p>
+          <a
+            className="DeveloperPortal__link"
+            href="https://github.com/LibertyDSNP/liberty-web/pull/13"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="DeveloperPortal__linkTitle">
+              Contribution Guidelines
+            </div>
+            &#x2192;
+          </a>
+          <a
+            className="DeveloperPortal__link"
+            href="https://www.projectliberty.io/codeOfConduct.html"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="DeveloperPortal__linkTitle">Code of Conduct</div>
+            &#x2192;
+          </a>
         </div>
       </div>
-      <div className="DeveloperPortal__logoBars"> </div>
-      <div className="DeveloperPortal__blackBackground">
+      <div className="DeveloperPortal__logoBars">{SlashBar}</div>
+      <div
+        className="DeveloperPortal__blackBackground DeveloperPortal__reportingBlock"
+        data-aos="fade-right"
+      >
         <div className="DeveloperPortal__reporting">
           <h2>Reporting Secure Vulnerabilities</h2>
           <p>
@@ -151,13 +206,17 @@ const DeveloperPortal = (props) => {
             posted publicly, please report it (and thank you!).
           </p>
           <a className="DeveloperPortal__link" href="#">
-            <div className="DeveloperPortal__linkTitle--white">
+            <a
+              className="DeveloperPortal__linkTitle--white"
+              href="mailto:security@projectliberty.io"
+            >
               Report Vulnerability
-            </div>
+            </a>
             &#x2192;
           </a>
         </div>
       </div>
+      <div className="DeveloperPortal__logoBars--two">{SlashBar}</div>
     </div>
   );
 };

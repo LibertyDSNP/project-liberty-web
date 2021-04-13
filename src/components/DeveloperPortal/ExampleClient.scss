@@ -3,7 +3,14 @@
   justify-content: space-around;
 }
 
-.ExampleClient__content {
+.ExampleClient__contentBlock {
   flex: 75;
-  padding: 0 16px;
+
+  @media (max-width: 749px) {
+    margin-top: 175px;
+  }
+}
+
+.ExampleClient__content {
+  @include dev-portal-width;
 }
