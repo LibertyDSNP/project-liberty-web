@@ -106,25 +106,6 @@ const DeveloperPortal = (props) => {
           <div className="DeveloperPortal__quickLink">&#x2192;</div>
         </a>
         <Link
-          to="/example-client"
-          className="DeveloperPortal__quickLinkCard"
-          data-aos="fade-up"
-        >
-          <img
-            className="DeveloperPortal__quickLinkCardIcon"
-            src={DevIcon}
-            alt="dev icon"
-          />
-          <h3 className="DeveloperPortal__quickLinkCardTitle">
-            Dev Environment
-          </h3>
-          <p className="DeveloperPortal__quickLinkCardDescription">
-            How to set up a development environment for building DSNP
-            applications.
-          </p>
-          <div className="DeveloperPortal__quickLink">&#x2192;</div>
-        </Link>
-        <Link
           to="/testnet"
           className="DeveloperPortal__quickLinkCard"
           data-aos="fade-up"
@@ -155,6 +136,25 @@ const DeveloperPortal = (props) => {
           <p className="DeveloperPortal__quickLinkCardDescription">
             A software development kit offering build configurations and common
             components for DSNP-enabled applications.
+          </p>
+          <div className="DeveloperPortal__quickLink">&#x2192;</div>
+        </Link>
+        <Link
+          to="/example-client"
+          className="DeveloperPortal__quickLinkCard"
+          data-aos="fade-up"
+        >
+          <img
+            className="DeveloperPortal__quickLinkCardIcon"
+            src={DevIcon}
+            alt="dev icon"
+          />
+          <h3 className="DeveloperPortal__quickLinkCardTitle">
+            Example Client
+          </h3>
+          <p className="DeveloperPortal__quickLinkCardDescription">
+            A working application demonstrating how to quickly integrate with
+            the DSNP.
           </p>
           <div className="DeveloperPortal__quickLink">&#x2192;</div>
         </Link>

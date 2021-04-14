@@ -58,7 +58,7 @@ const ExampleClient = (props) => {
             </a>{" "}
             or the client from our repo and take a look. Hop in our{" "}
             <a
-              href="https://forum.projectliberty.io"
+              href="https://forums.projectliberty.io"
               target="_blank"
               rel="noreferrer"
             >

@@ -48,7 +48,7 @@ const Sdk = (props) => {
             </a>{" "}
             and start with{" "}
             <a
-              href="https://github.com/LibertyDSNP/sdk-ts/blob/main/docs/README.md"
+              href="https://github.com/LibertyDSNP/sdk-ts/blob/main/README.md"
               target="_blank"
               rel="noreferrer"
             >
@@ -64,7 +64,7 @@ const Sdk = (props) => {
             </a>{" "}
             to start digging in to real, running code. As always, check out the{" "}
             <a
-              href="https://projectliberty.io"
+              href="https://forums.projectliberty.io/"
               target="_blank"
               rel="noreferrer"
             >
