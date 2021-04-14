@@ -103,7 +103,7 @@ const DeveloperPortal = (props) => {
             The Distributed Social Networking Protocol is the glue that joins
             all the Project Liberty technologies together.
           </p>
-          <div className="DeveloperPortal__quickLink">&#x2192;</div>
+          <div className="DeveloperPortal__quickLinkBtn">&#x2192;</div>
         </a>
         <Link
           to="/testnet"
@@ -120,7 +120,7 @@ const DeveloperPortal = (props) => {
             The test network provides a simple "server side" against which you
             can test a DSNP client application.
           </p>
-          <div className="DeveloperPortal__quickLink">&#x2192;</div>
+          <div className="DeveloperPortal__quickLinkBtn">&#x2192;</div>
         </Link>
         <Link
           to="/sdk"
@@ -137,7 +137,7 @@ const DeveloperPortal = (props) => {
             A software development kit offering build configurations and common
             components for DSNP-enabled applications.
           </p>
-          <div className="DeveloperPortal__quickLink">&#x2192;</div>
+          <div className="DeveloperPortal__quickLinkBtn">&#x2192;</div>
         </Link>
         <Link
           to="/example-client"
@@ -156,7 +156,7 @@ const DeveloperPortal = (props) => {
             A working application demonstrating how to quickly integrate with
             the DSNP.
           </p>
-          <div className="DeveloperPortal__quickLink">&#x2192;</div>
+          <div className="DeveloperPortal__quickLinkBtn">&#x2192;</div>
         </Link>
       </div>
       <div className="DeveloperPortal__rules">
@@ -182,15 +182,10 @@ const DeveloperPortal = (props) => {
             </div>
             &#x2192;
           </a>
-          <a
-            className="DeveloperPortal__link"
-            href="https://www.projectliberty.io/codeOfConduct.html"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <Link to="/code-of-conduct" className="DeveloperPortal__link">
             <div className="DeveloperPortal__linkTitle">Code of Conduct</div>
             &#x2192;
-          </a>
+          </Link>
         </div>
       </div>
       <div className="DeveloperPortal__logoBars">{SlashBar}</div>
@@ -199,7 +194,7 @@ const DeveloperPortal = (props) => {
         data-aos="fade-right"
       >
         <div className="DeveloperPortal__reporting">
-          <h2>Reporting Secure Vulnerabilities</h2>
+          <h2>Reporting Security Vulnerabilities</h2>
           <p>
             If you discover a security vulnerability in one of the projects
             here, and you feel that it's sensitive enough that it shouldn’t be

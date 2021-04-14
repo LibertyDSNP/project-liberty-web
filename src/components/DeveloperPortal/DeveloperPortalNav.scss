@@ -75,10 +75,11 @@
   max-width: 260px;
   background-color: $gray;
   flex-grow: 1;
-  margin-bottom: -100px;
+  margin-bottom: -75px;
 
   @media (max-width: 970px) {
     max-width: 210px;
+    margin-bottom: -50px;
   }
 
   .DeveloperPortalNav__dropdownLink {
