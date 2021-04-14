@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/project-liberty-web/static/css/main.9feb00fa.chunk.css",
-    "main.js": "/project-liberty-web/static/js/main.57be8bd8.chunk.js",
-    "main.js.map": "/project-liberty-web/static/js/main.57be8bd8.chunk.js.map",
+    "main.css": "/project-liberty-web/static/css/main.a2354e4a.chunk.css",
+    "main.js": "/project-liberty-web/static/js/main.4c71aa22.chunk.js",
+    "main.js.map": "/project-liberty-web/static/js/main.4c71aa22.chunk.js.map",
     "runtime-main.js": "/project-liberty-web/static/js/runtime-main.0b5309fd.js",
     "runtime-main.js.map": "/project-liberty-web/static/js/runtime-main.0b5309fd.js.map",
     "static/css/2.933f5e7d.chunk.css": "/project-liberty-web/static/css/2.933f5e7d.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.dadef58d.chunk.js.map": "/project-liberty-web/static/js/2.dadef58d.chunk.js.map",
     "index.html": "/project-liberty-web/index.html",
     "static/css/2.933f5e7d.chunk.css.map": "/project-liberty-web/static/css/2.933f5e7d.chunk.css.map",
-    "static/css/main.9feb00fa.chunk.css.map": "/project-liberty-web/static/css/main.9feb00fa.chunk.css.map",
+    "static/css/main.a2354e4a.chunk.css.map": "/project-liberty-web/static/css/main.a2354e4a.chunk.css.map",
     "static/js/2.dadef58d.chunk.js.LICENSE.txt": "/project-liberty-web/static/js/2.dadef58d.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/project-liberty-web/static/media/no-background-brand-icon.90f9d8db.png",
     "static/media/logo.3fb7764c.png": "/project-liberty-web/static/media/logo.3fb7764c.png",
@@ -20,7 +20,7 @@
     "static/js/runtime-main.0b5309fd.js",
     "static/css/2.933f5e7d.chunk.css",
     "static/js/2.dadef58d.chunk.js",
-    "static/css/main.9feb00fa.chunk.css",
-    "static/js/main.57be8bd8.chunk.js"
+    "static/css/main.a2354e4a.chunk.css",
+    "static/js/main.4c71aa22.chunk.js"
   ]
 }
