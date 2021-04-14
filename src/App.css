@@ -13,7 +13,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  box-shadow: 30px 0 40px -2px #c7c5c5, -30px 0 40px -2px #c7c5c5;
+  box-shadow: 15px 0 20px -2px #c7c5c5, -15px 0 20px -2px #c7c5c5;
 }
 
 .Component {
@@ -173,7 +173,7 @@ a:hover {
 .Footer__block {
   background-color: #000;
   padding: 20px 0;
-  margin-top: 100px;
+  margin-top: 75px;
   text-align: center;
   color: #fff;
   font-size: 14px;
@@ -184,15 +184,15 @@ a:hover {
 @media (max-width: 991px) {
   .Footer__block {
     font-size: 12px;
-    margin-top: 75px;
-    padding: 20px 0;
+    margin-top: 50px;
+    padding: 18px 0 22px;
   }
 }
 @media (max-width: 767px) {
   .Footer__block {
     font-size: 10px;
-    margin-top: 50px;
-    padding: 10px 0;
+    margin-top: 30px;
+    padding: 0 0 24px 0;
     line-height: 2;
   }
 }
@@ -202,9 +202,21 @@ a:hover {
 }
 
 .Footer__width {
-  width: fit-content;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   margin: 0 auto;
+}
+@media (max-width: 991px) {
+  .Footer__width {
+    max-width: 75vw;
+  }
+}
+@media (max-width: 767px) {
+  .Footer__width {
+    max-width: 90vw;
+  }
 }
 @media (max-width: 767px) {
   .Footer__width {
@@ -213,11 +225,14 @@ a:hover {
 }
 .Footer__width img {
   max-width: 250px;
-  height: fit-content;
+  height: 100%;
+  padding-left: 0;
+  margin-left: -22px;
 }
 
 .Footer__row {
   display: flex;
+  justify-content: space-between;
 }
 @media (max-width: 767px) {
   .Footer__row {
@@ -231,6 +246,8 @@ a:hover {
   display: flex;
   flex-direction: column;
   text-align: left;
+  width: 100%;
+  max-width: 620px;
 }
 @media (max-width: 767px) {
   .Footer__columnBlock {
@@ -258,6 +275,9 @@ a:hover {
 
 .Footer__textLink {
   color: #fff;
+}
+.Footer__textLink:hover {
+  text-decoration: none !important;
 }
 
 .Footer__lastUpdated {
@@ -295,6 +315,9 @@ a:hover {
     text-transform: uppercase;
     padding-right: 16px;
   }
+}
+.Navigation__link:hover {
+  text-decoration: none !important;
 }
 
 .Navigation__dropdownBtnIcon {
@@ -404,20 +427,20 @@ a:hover {
   display: flex;
   margin: 0 auto;
   position: relative;
-  width: 72px;
-  height: 72px;
+  width: 78px;
+  height: 78px;
   z-index: 1;
 }
 @media (max-width: 991px) {
   .Home__blackBoxIcon {
-    width: 60px;
-    height: 60px;
+    width: 72px;
+    height: 72px;
   }
 }
 @media (max-width: 767px) {
   .Home__blackBoxIcon {
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
   }
 }
 
@@ -616,7 +639,7 @@ a:hover {
 }
 @media (max-width: 971px) {
   .DeveloperPortal__headerLogo {
-    width: 35px;
+    width: 60px;
   }
 }
 
@@ -667,14 +690,24 @@ a:hover {
     max-width: 90vw;
   }
 }
+@media (max-width: 991px) {
+  .DeveloperPortal__getStarted {
+    padding: 25px 0 275px 0;
+  }
+}
+@media (max-width: 700px) {
+  .DeveloperPortal__getStarted {
+    padding: 10px 0 275px 0;
+  }
+}
 
 .DeveloperPortal__parallaxIcon {
   background-image: url("../../images/no-background-brand-icon.png");
   height: 358px;
   background-attachment: fixed;
-  background-position: left 85% top 0, right 15% top 0;
+  background-position: left 85% top 200px, right 15% top 200px;
   background-repeat: no-repeat;
-  margin-top: -300px;
+  margin-top: -280px;
   position: relative;
 }
 
@@ -686,7 +719,7 @@ a:hover {
   justify-content: space-between;
   text-align: center;
   flex-wrap: wrap;
-  margin-top: -225px;
+  margin-top: -300px;
 }
 @media (max-width: 991px) {
   .DeveloperPortal__quickLinks {
@@ -701,11 +734,13 @@ a:hover {
 @media (max-width: 991px) {
   .DeveloperPortal__quickLinks {
     max-width: 90vw;
+    margin-top: -315px;
   }
 }
 @media (max-width: 700px) {
   .DeveloperPortal__quickLinks {
     max-width: 96vw;
+    margin-top: -330px;
   }
 }
 
@@ -718,13 +753,17 @@ a:hover {
   flex-basis: 20%;
   min-width: 200px;
   align-items: center;
-  box-shadow: 0 6px 6px #d4d4d4;
+  box-shadow: 0 6px 6px rgba(81, 81, 81, 0.2);
   color: #000;
 }
 .DeveloperPortal__quickLinkCard:active, .DeveloperPortal__quickLinkCard:focus, .DeveloperPortal__quickLinkCard:hover {
   color: #000;
   text-decoration: none;
-  box-shadow: 6px 10px 12px #d4d4d4, -6px 6px 6px #d4d4d4;
+  box-shadow: 6px 10px 12px rgba(81, 81, 81, 0.2), -6px 6px 6px rgba(81, 81, 81, 0.2);
+}
+.DeveloperPortal__quickLinkCard:active .DeveloperPortal__quickLinkBtn, .DeveloperPortal__quickLinkCard:focus .DeveloperPortal__quickLinkBtn, .DeveloperPortal__quickLinkCard:hover .DeveloperPortal__quickLinkBtn {
+  font-weight: bold;
+  font-size: 20px;
 }
 @media (max-width: 991px) {
   .DeveloperPortal__quickLinkCard {
@@ -742,7 +781,7 @@ a:hover {
   }
 }
 
-.DeveloperPortal__quickLink {
+.DeveloperPortal__quickLinkBtn {
   position: relative;
   height: 30px;
   width: 30px;
@@ -755,10 +794,6 @@ a:hover {
   justify-content: center;
   align-items: center;
   color: #26e990;
-}
-.DeveloperPortal__quickLink:hover {
-  font-weight: bold;
-  font-size: 20px;
 }
 
 .DeveloperPortal__quickLinkCard:last-child {
@@ -821,6 +856,18 @@ a:hover {
 .DeveloperPortal__rulesContent {
   padding: 50px;
   margin-top: 50px;
+}
+@media (max-width: 991px) {
+  .DeveloperPortal__rulesContent {
+    padding: 35px;
+    margin-top: 35px;
+  }
+}
+@media (max-width: 700px) {
+  .DeveloperPortal__rulesContent {
+    padding: 20px;
+    margin-top: 20px;
+  }
 }
 
 .DeveloperPortal__link {
@@ -890,6 +937,16 @@ a:hover {
     max-width: 90vw;
   }
 }
+@media (max-width: 991px) {
+  .DeveloperPortal__reporting {
+    padding: 75px 0;
+  }
+}
+@media (max-width: 700px) {
+  .DeveloperPortal__reporting {
+    padding: 50px 0;
+  }
+}
 
 .DeveloperPortal__logoBars {
   display: flex;
@@ -929,19 +986,24 @@ a:hover {
   height: 200px;
   min-width: 2200px;
   position: relative;
-  margin: -60px 0;
+  margin-top: -60px;
   overflow: hidden;
+}
+@media (max-width: 767px) {
+  .DeveloperPortal__logoBars--two {
+    height: 260px;
+  }
 }
 .DeveloperPortal__logoBars--two #slash6,
 .DeveloperPortal__logoBars--two #slash10 {
   z-index: 0;
 }
-.DeveloperPortal__logoBars--two #slash1,
+.DeveloperPortal__logoBars--two #slash0,
 .DeveloperPortal__logoBars--two #slash19 {
   z-index: 3;
 }
 @media (max-width: 934px) {
-  .DeveloperPortal__logoBars--two #slash1,
+  .DeveloperPortal__logoBars--two #slash0,
 .DeveloperPortal__logoBars--two #slash19 {
     z-index: 1;
   }
@@ -964,7 +1026,7 @@ a:hover {
 
 @media (min-width: 971px) {
   .DeveloperPortalNav__topNav {
-    box-shadow: 0 8px 4px -4px #d4d4d4, -7px 5px 4px -4px #d4d4d4, 7px 5px 4px -4px #d4d4d4;
+    box-shadow: 0 8px 4px -4px rgba(81, 81, 81, 0.2), -7px 5px 4px -4px rgba(81, 81, 81, 0.2), 7px 5px 4px -4px rgba(81, 81, 81, 0.2);
     margin-top: 8px;
     opacity: 0;
     position: absolute;
@@ -1024,6 +1086,10 @@ a:hover {
   text-decoration: none;
 }
 
+.DeveloperPortalNav__dropdownLink--active {
+  background-color: #f0f0f0;
+}
+
 .DeveloperPortalNav__sideNav {
   display: flex;
   flex-direction: column;
@@ -1031,11 +1097,12 @@ a:hover {
   max-width: 260px;
   background-color: #d4d4d4;
   flex-grow: 1;
-  margin-bottom: -100px;
+  margin-bottom: -75px;
 }
 @media (max-width: 970px) {
   .DeveloperPortalNav__sideNav {
     max-width: 210px;
+    margin-bottom: -50px;
   }
 }
 .DeveloperPortalNav__sideNav .DeveloperPortalNav__dropdownLink {
@@ -1043,6 +1110,9 @@ a:hover {
   padding-left: 24px;
   font-weight: bold;
   width: inherit;
+}
+.DeveloperPortalNav__sideNav .DeveloperPortalNav__dropdownLink--active {
+  background-color: #e6e6e6;
 }
 .DeveloperPortalNav__sideNav .DeveloperPortalNav__dropdownLink:hover {
   background-color: #fff;
@@ -1099,9 +1169,9 @@ a:hover {
 }
 
 .DeveloperPortalMobileNav__dropdownLinkBlock {
-  background-color: #d4d4d4;
   height: fit-content;
   width: 100%;
+  padding-bottom: 12px;
 }
 
 .DeveloperPortalMobileNav__dropdownTitle {
@@ -1112,7 +1182,6 @@ a:hover {
   justify-content: space-between;
   height: fit-content;
   font-weight: bold;
-  background-color: #fff;
   box-shadow: inset 0 3px 12px #d4d4d4;
 }
 

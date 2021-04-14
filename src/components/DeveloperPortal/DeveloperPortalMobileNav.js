@@ -1,25 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../images/brand-icon.png";
+import GetCurrentPage from "./getCurrentPage";
 
 const DeveloperPortalMobileNav = () => {
-  const pathname = window.location.pathname;
-
-  const getPageTitle = {
-    "/testnet": "Testnet",
-    "/sdk": "SDK",
-    "/example-client": "Example Client",
-  };
-
-  const [currentPageTitle, setCurrentPageTitle] = useState(
-    getPageTitle[pathname]
-  );
   const [isOpenDropdown, setIsOpenDropdown] = useState(false);
-
-  useEffect(() => {
-    setCurrentPageTitle(getPageTitle[window.location.pathname]);
-  }, [window.location.pathname]);
-
+  const currentPageTitle = GetCurrentPage();
   return (
     <div className="DeveloperPortalMobileNav__block">
       <div className="DeveloperPortalMobileNav__headerBlock">
@@ -98,7 +84,7 @@ const DeveloperPortalMobileNav = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Forum
+              Forums
             </a>
           </>
         )}

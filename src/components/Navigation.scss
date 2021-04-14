@@ -26,6 +26,10 @@
     text-transform: uppercase;
     padding-right: 16px;
   }
+
+  &:hover {
+    text-decoration: none !important;
+  }
 }
 
 .Navigation__dropdownBtnIcon {

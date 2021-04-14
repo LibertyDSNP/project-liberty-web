@@ -1,7 +1,7 @@
 .Footer__block {
   background-color: $black;
   padding: 20px 0;
-  margin-top: 100px;
+  margin-top: 75px;
   text-align: center;
   color: $white;
   font-size: 14px;
@@ -11,14 +11,14 @@
 
   @media (max-width: 991px) {
     font-size: 12px;
-    margin-top: 75px;
-    padding: 20px 0;
+    margin-top: 50px;
+    padding: 18px 0 22px;
   }
 
   @media (max-width: 767px) {
     font-size: 10px;
-    margin-top: 50px;
-    padding: 10px 0;
+    margin-top: 30px;
+    padding: 0 0 24px 0;
     line-height: 2;
   }
 }
@@ -28,7 +28,7 @@
 }
 
 .Footer__width {
-  width: fit-content;
+  @include body-width;
   display: flex;
   margin: 0 auto;
 
@@ -38,12 +38,15 @@
 
   img {
     max-width: 250px;
-    height: fit-content;
+    height: 100%;
+    padding-left: 0;
+    margin-left: -22px;
   }
 }
 
 .Footer__row {
   display: flex;
+  justify-content: space-between;
 
   @media (max-width: 767px) {
     flex-direction: column;
@@ -56,6 +59,8 @@
   display: flex;
   flex-direction: column;
   text-align: left;
+  width: 100%;
+  max-width: 620px;
 
   @media (max-width: 767px) {
     border-left: none;
@@ -81,6 +86,10 @@
 
 .Footer__textLink {
   color: $white;
+
+  &:hover {
+    text-decoration: none !important;
+  }
 }
 
 .Footer__lastUpdated {

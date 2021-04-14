@@ -1,8 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../../images/brand-icon.png";
+import GetCurrentPage from "./getCurrentPage";
 
 const DeveloperPortalNav = (blockClassName) => {
+  const currentPageTitle = GetCurrentPage();
+
+  const getClassName = (name) => {
+    return currentPageTitle === name
+      ? "DeveloperPortalNav__dropdownLink DeveloperPortalNav__dropdownLink--active"
+      : "DeveloperPortalNav__dropdownLink";
+  };
+
   return (
     <div className={blockClassName.blockClassName}>
       {blockClassName.blockClassName === "DeveloperPortalNav__sideNav" && (
@@ -36,13 +45,13 @@ const DeveloperPortalNav = (blockClassName) => {
         >
           Distributed Social Networking Protocol (DSNP)
         </a>
-        <Link to="/testnet" className="DeveloperPortalNav__dropdownLink">
+        <Link to="/testnet" className={getClassName("Testnet")}>
           Testnet
         </Link>
-        <Link to="/sdk" className="DeveloperPortalNav__dropdownLink">
+        <Link to="/sdk" className={getClassName("SDK")}>
           SDK
         </Link>
-        <Link to="/example-client" className="DeveloperPortalNav__dropdownLink">
+        <Link to="/example-client" className={getClassName("Example Client")}>
           Example Client
         </Link>
         <a
@@ -51,7 +60,7 @@ const DeveloperPortalNav = (blockClassName) => {
           target="_blank"
           rel="noreferrer"
         >
-          Forum
+          Forums
         </a>
       </div>
     </div>

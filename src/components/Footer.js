@@ -40,7 +40,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="Footer__lastUpdated">
-            Website last updated: 4/13/2021 ©2021 Liberty 3.0 LLC
+            Website last updated: 4/14/2021 ©2021 Unfinished Labs LLC
           </div>
         </div>
       </div>
