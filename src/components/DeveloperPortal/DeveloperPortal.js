@@ -100,8 +100,8 @@ const DeveloperPortal = (props) => {
           />
           <h3 className="DeveloperPortal__quickLinkCardTitle">DSNP</h3>
           <p className="DeveloperPortal__quickLinkCardDescription">
-            The Distributed Social Networking Protocol is the glue that joins
-            all the Project Liberty technologies together.
+            The Distributed Social Networking Protocol joins all the Project
+            Liberty technologies together.
           </p>
           <div className="DeveloperPortal__quickLinkBtn">&#x2192;</div>
         </a>
@@ -117,8 +117,8 @@ const DeveloperPortal = (props) => {
           />
           <h3 className="DeveloperPortal__quickLinkCardTitle">Testnet</h3>
           <p className="DeveloperPortal__quickLinkCardDescription">
-            The test network provides a simple "server side" against which you
-            can test a DSNP client application.
+            The test network is a simple "server side" in which you can test a
+            DSNP client application.
           </p>
           <div className="DeveloperPortal__quickLinkBtn">&#x2192;</div>
         </Link>
@@ -134,8 +134,8 @@ const DeveloperPortal = (props) => {
           />
           <h3 className="DeveloperPortal__quickLinkCardTitle">SDK</h3>
           <p className="DeveloperPortal__quickLinkCardDescription">
-            A software development kit offering build configurations and common
-            components for DSNP-enabled applications.
+            A software dev kit with build configurations and components for
+            DSNP-enabled applications.
           </p>
           <div className="DeveloperPortal__quickLinkBtn">&#x2192;</div>
         </Link>
@@ -153,8 +153,8 @@ const DeveloperPortal = (props) => {
             Example Client
           </h3>
           <p className="DeveloperPortal__quickLinkCardDescription">
-            A working application demonstrating how to quickly integrate with
-            the DSNP.
+            A working application demonstrating an example of how to quickly
+            integrate with the DSNP.
           </p>
           <div className="DeveloperPortal__quickLinkBtn">&#x2192;</div>
         </Link>

@@ -43,7 +43,8 @@ const DeveloperPortalNav = (blockClassName) => {
           target="_blank"
           rel="noreferrer"
         >
-          Distributed Social Networking Protocol (DSNP)
+          <div>Distributed Social Networking Protocol (DSNP)</div>
+          <div className="DeveloperPortalNav__linkArrowIcon">&#x2192;</div>
         </a>
         <Link to="/testnet" className={getClassName("Testnet")}>
           Testnet
@@ -61,6 +62,7 @@ const DeveloperPortalNav = (blockClassName) => {
           rel="noreferrer"
         >
           Forums
+          <div className="DeveloperPortalNav__linkArrowIcon">&#x2192;</div>
         </a>
       </div>
     </div>
