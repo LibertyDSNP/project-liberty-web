@@ -5,30 +5,15 @@
 .DeveloperPortalNav__topNav {
   @media (min-width: 971px) {
     box-shadow: 0 8px 4px -4px $transparent-gray, -7px 5px 4px -4px $transparent-gray, 7px 5px 4px -4px $transparent-gray;
-    margin-top: 8px;
-    opacity: 0;
+    padding-top: 8px;
     position: absolute;
     display: flex;
     flex-direction: column;
-    visibility: hidden;
     top: 100%;
     left: 0;
     width: 230px;
     background-color: $white;
-    transform: translateY(-1em);
-    transition: all 0.5s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
     z-index: 3;
-  }
-}
-
-.Navigation__dropdownBlock:focus .DeveloperPortalNav__topNav,
-.Navigation__dropdownBlock:focus-within .DeveloperPortalNav__topNav,
-.Navigation__dropdownBlock:hover .DeveloperPortalNav__topNav {
-  @media (min-width: 971px) {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-    transition-delay: 0s, 0s, 0.5s;
   }
 }
 

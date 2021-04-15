@@ -32,6 +32,12 @@
   }
 }
 
+.Navigation__dropdownBtnBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .Navigation__dropdownBtnIcon {
   transform: rotate(-90deg);
   padding: 0 6px;

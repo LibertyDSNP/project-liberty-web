@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 import DeveloperPortalNav from "./DeveloperPortal/DeveloperPortalNav";
 
 const Navigation = () => {
-  const initiallyShowMenu = window.innerWidth > 970 ? true : false;
-  const [showNav, setShowNav] = React.useState(initiallyShowMenu);
-  const [isMobile, setIsMobile] = React.useState(!initiallyShowMenu);
+  const showTopNav = window.innerWidth > 970 ? true : false;
+  const [showNav, setShowNav] = React.useState(showTopNav);
+  const [showTopNavDropdown, setShowTopNavDropdown] = React.useState(
+    !showTopNav
+  );
   const [navIconClassName, setNavIconClassName] = React.useState(
     "Navigation__burger"
   );
@@ -19,10 +21,9 @@ const Navigation = () => {
     window.addEventListener("resize", () => {
       if (window.innerWidth > 970) {
         setShowNav(true);
-        setIsMobile(false);
       } else {
         setShowNav(false);
-        setIsMobile(true);
+        setShowTopNavDropdown(false);
       }
     });
   }, [showNav]);
@@ -30,10 +31,11 @@ const Navigation = () => {
   const hideDropdownNav = () => {
     if (window.innerWidth < 971) {
       setShowNav(false);
-      setIsMobile(true);
     }
   };
 
+  console.log({ showBurgerNav: showNav });
+  console.log({ showTopNavDropdown });
   return (
     <>
       <div
@@ -56,15 +58,33 @@ const Navigation = () => {
             About
           </Link>
           <span className="Navigation__divider"> / </span>
-          <div className="Navigation__dropdownBlock">
-            <Link
-              to="/developer-portal"
-              className="Navigation__link Navigation__dropdownBtn"
-              onClick={() => hideDropdownNav()}
-            >
-              Developer Portal
-            </Link>
-            {!isMobile && (
+          <div
+            className="Navigation__dropdownBlock"
+            onMouseEnter={() => setShowTopNavDropdown(true)}
+            onMouseLeave={() => setShowTopNavDropdown(false)}
+          >
+            <div className="Navigation__dropdownBtnBlock">
+              <Link
+                to="/developer-portal"
+                className="Navigation__link Navigation__dropdownBtn"
+                onClick={() => hideDropdownNav()}
+              >
+                Developer Portal
+              </Link>
+              {showTopNav && (
+                <div
+                  className={
+                    showTopNavDropdown && showTopNav
+                      ? "DeveloperPortalMobileNav__dropdownIcon"
+                      : "DeveloperPortalMobileNav__dropdownIcon--closed"
+                  }
+                  style={{ marginLeft: 10, fontSize: 16 }}
+                >
+                  ❯
+                </div>
+              )}
+            </div>
+            {showTopNavDropdown && showTopNav && (
               <DeveloperPortalNav blockClassName="DeveloperPortalNav__topNav" />
             )}
           </div>

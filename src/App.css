@@ -320,6 +320,12 @@ a:hover {
   text-decoration: none !important;
 }
 
+.Navigation__dropdownBtnBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .Navigation__dropdownBtnIcon {
   transform: rotate(-90deg);
   padding: 0 6px;
@@ -1027,30 +1033,15 @@ a:hover {
 @media (min-width: 971px) {
   .DeveloperPortalNav__topNav {
     box-shadow: 0 8px 4px -4px rgba(81, 81, 81, 0.2), -7px 5px 4px -4px rgba(81, 81, 81, 0.2), 7px 5px 4px -4px rgba(81, 81, 81, 0.2);
-    margin-top: 8px;
-    opacity: 0;
+    padding-top: 8px;
     position: absolute;
     display: flex;
     flex-direction: column;
-    visibility: hidden;
     top: 100%;
     left: 0;
     width: 230px;
     background-color: #fff;
-    transform: translateY(-1em);
-    transition: all 0.5s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
     z-index: 3;
-  }
-}
-
-@media (min-width: 971px) {
-  .Navigation__dropdownBlock:focus .DeveloperPortalNav__topNav,
-.Navigation__dropdownBlock:focus-within .DeveloperPortalNav__topNav,
-.Navigation__dropdownBlock:hover .DeveloperPortalNav__topNav {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-    transition-delay: 0s, 0s, 0.5s;
   }
 }
 
@@ -1188,11 +1179,13 @@ a:hover {
 .DeveloperPortalMobileNav__dropdownIcon {
   font-size: 24px;
   transform: rotate(-90deg);
+  transition: transform 0.3s;
 }
 
 .DeveloperPortalMobileNav__dropdownIcon--closed {
   font-size: 24px;
   transform: rotate(90deg);
+  transition: transform 0.3s;
 }
 
 .DeveloperPortalMobileNav__dropdownLink {
