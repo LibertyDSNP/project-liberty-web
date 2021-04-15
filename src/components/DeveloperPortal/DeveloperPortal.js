@@ -173,7 +173,7 @@ const DeveloperPortal = (props) => {
           </p>
           <a
             className="DeveloperPortal__link"
-            href="https://github.com/Liberty30/project-liberty-web/blob/main/CONTRIBUTING.md"
+            href="https://github.com/LibertyDSNP/project-liberty-web/blob/main/CONTRIBUTING.md"
             target="_blank"
             rel="noreferrer"
           >

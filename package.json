@@ -1,6 +1,5 @@
 {
   "name": "project-liberty-web",
-  "homepage": "https://liberty30.github.io/project-liberty-web/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
