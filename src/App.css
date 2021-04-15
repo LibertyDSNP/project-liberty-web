@@ -1058,6 +1058,7 @@ a:hover {
   color: #000;
   display: flex;
   justify-self: stretch;
+  justify-content: space-between;
   background-color: #fff;
   transition: background-color 0.2s;
   border-bottom: #d4d4d4 1px solid;
@@ -1099,6 +1100,7 @@ a:hover {
 .DeveloperPortalNav__sideNav .DeveloperPortalNav__dropdownLink {
   background-color: #d4d4d4;
   padding-left: 24px;
+  padding-right: 24px;
   font-weight: bold;
   width: inherit;
 }
@@ -1131,6 +1133,12 @@ a:hover {
   margin: 0;
   line-height: 1.2;
   padding-top: 10px;
+}
+
+.DeveloperPortalNav__linkArrowIcon {
+  transform: rotate(-45deg);
+  width: min-content;
+  height: 18px;
 }
 
 .DeveloperPortalMobileNav__block {

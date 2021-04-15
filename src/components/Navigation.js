@@ -34,8 +34,6 @@ const Navigation = () => {
     }
   };
 
-  console.log({ showBurgerNav: showNav });
-  console.log({ showTopNavDropdown });
   return (
     <>
       <div
