@@ -1008,7 +1008,7 @@ a:hover {
 .DeveloperPortal__logoBars--two #slash19 {
   z-index: 3;
 }
-@media (max-width: 934px) {
+@media (max-width: 1050px) {
   .DeveloperPortal__logoBars--two #slash0,
 .DeveloperPortal__logoBars--two #slash19 {
     z-index: 1;
