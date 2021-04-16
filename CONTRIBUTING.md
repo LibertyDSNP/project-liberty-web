@@ -17,7 +17,7 @@ development workflow.
 You're always welcome to open a PR in any repository here.  We
 encourage you to first post about your plans either in an issue ticket
 (an existing one or one you create) or in the [Discussion
-Forums](https://forum.projectliberty.io/).  That way you can get any
+Forums](https://forums.projectliberty.io/).  That way you can get any
 important design feedback or suggestions before you start coding.
 
 It's also okay to post with questions before you've decided whether or
@@ -115,7 +115,7 @@ request as the core source code change.
 
 If your change fixes a security vulnerability that is not already
 public knowledge, please check with [the security
-team](https://projectliberty.io/security-contact-or-some-such-url)
+team](mailto:security@projectliberty.io)
 before discussing the change in any public forums or posting a PR.
 
 ### Expunging Branches Once They Are Merged
