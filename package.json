@@ -1,6 +1,6 @@
 {
   "name": "project-liberty-web",
-  "homepage": "https://www-test.projectliberty.io/",
+  "homepage": "https://www.projectliberty.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

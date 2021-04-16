@@ -200,13 +200,13 @@ const DeveloperPortal = (props) => {
             here, and you feel that it's sensitive enough that it shouldn’t be
             posted publicly, please report it (and thank you!).
           </p>
-          <a className="DeveloperPortal__link" href="#">
-            <a
-              className="DeveloperPortal__linkTitle--white"
-              href="mailto:security@projectliberty.io"
-            >
+          <a
+            className="DeveloperPortal__link"
+            href="mailto:security@projectliberty.io"
+          >
+            <div className="DeveloperPortal__linkTitle--white">
               Report Vulnerability
-            </a>
+            </div>
             &#x2192;
           </a>
         </div>
