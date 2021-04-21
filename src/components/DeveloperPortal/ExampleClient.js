@@ -56,7 +56,15 @@ const ExampleClient = (props) => {
             >
               SDK
             </a>{" "}
-            or the client from our repo and take a look. Hop in our{" "}
+            or the{" "}
+            <a
+              href="https://github.com/LibertyDSNP/example-client"
+              target="_blank"
+              rel="noreferrer"
+            >
+              client
+            </a>{" "}
+            from our repo and take a look. Hop in our{" "}
             <a
               href="https://forums.projectliberty.io"
               target="_blank"
