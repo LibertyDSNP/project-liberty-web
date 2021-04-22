@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../images/logoDark.png";
 
 const Footer = () => {
+  const [showOutsideLink, setShowOutsideLink] = useState(false);
   return (
     <div className="Footer__block" data-aos-offset="0" data-aos="fade">
       <div className="Footer__width" data-aos-offset="0" data-aos="fade">
@@ -17,14 +18,25 @@ const Footer = () => {
                 >
                   Contact
                 </a>
-                <a
-                  className="Footer__textLink"
-                  href="https://www.unfinishedlabs.io"
-                  target="_blank"
-                  rel="noreferrer"
+                <div
+                  onMouseEnter={() => setShowOutsideLink(true)}
+                  onMouseLeave={() => setShowOutsideLink(false)}
                 >
-                  Unfinished Labs
-                </a>
+                  <a
+                    className="Footer__textLink Footer__outsideLink"
+                    href="https://www.unfinishedlabs.io"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Unfinished Labs
+                    <div className="Footer__linkArrow">&#x2192;</div>
+                  </a>
+                  {showOutsideLink && (
+                    <div className="Footer__outsideLinkCopy">
+                      You are now leaving the Project Liberty website.
+                    </div>
+                  )}
+                </div>
                 <Link className="Footer__textLink" to="/about">
                   About Project Liberty and its Partners
                 </Link>

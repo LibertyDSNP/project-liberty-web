@@ -280,6 +280,23 @@ a:hover {
   text-decoration: none !important;
 }
 
+.Footer__outsideLink {
+  display: flex;
+}
+
+.Footer__linkArrow {
+  transform: rotate(-45deg);
+  width: min-content;
+  margin-left: 6px;
+}
+
+.Footer__outsideLinkCopy {
+  background-color: #363636;
+  padding: 1px 6px;
+  box-shadow: 0 2px 2px 2px rgba(54, 54, 54, 0.5);
+  position: absolute;
+}
+
 .Footer__lastUpdated {
   font-weight: normal;
   margin-top: 16px;
